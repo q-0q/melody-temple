@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://gdqr7jdbc4hf"]
+
+[ext_resource type="Script" path="res://Scripts/MovePlatform.gd" id="1_bv31b"]
+
+[node name="MovePlatform" type="Node2D"]
+z_index = -1
+script = ExtResource("1_bv31b")

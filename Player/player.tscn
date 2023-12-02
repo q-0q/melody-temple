@@ -1,0 +1,174 @@
+[gd_scene load_steps=18 format=3 uid="uid://d4akn3m1qr1vf"]
+
+[ext_resource type="Script" path="res://Player/player.gd" id="1_k1xl8"]
+[ext_resource type="Script" path="res://Player/FSM.gd" id="2_ipgpa"]
+[ext_resource type="Script" path="res://Player/States/Idle.gd" id="3_4ix4y"]
+[ext_resource type="Script" path="res://Player/States/Run.gd" id="4_5vivc"]
+[ext_resource type="Script" path="res://Player/States/Rise.gd" id="4_fvsv5"]
+[ext_resource type="Script" path="res://Player/States/FallFromAir.gd" id="4_i5k0l"]
+[ext_resource type="Script" path="res://Player/States/FallFromGround.gd" id="7_mdj4x"]
+[ext_resource type="Script" path="res://Player/States/LedgeMount.gd" id="8_s4821"]
+[ext_resource type="Texture2D" uid="uid://lgm6nvl3m7yx" path="res://Assets/Player.png" id="9_28t2g"]
+[ext_resource type="Texture2D" uid="uid://vv7c0csurd1a" path="res://Assets/hud_note_temp.png" id="10_0ppti"]
+[ext_resource type="Script" path="res://Scripts/NoteReactor.gd" id="10_j4ca1"]
+[ext_resource type="Script" path="res://Scripts/NoteHud.gd" id="10_n84r3"]
+[ext_resource type="Script" path="res://Player/Crusher.gd" id="13_6egvo"]
+
+[sub_resource type="Curve" id="Curve_wosqu"]
+_data = [Vector2(0, 0), 0.0, 0.0, 0, 0, Vector2(1, 1), 1.4, 0.0, 0, 0]
+point_count = 2
+
+[sub_resource type="Curve" id="Curve_yg3di"]
+_data = [Vector2(0, 1), 0.0, -0.891851, 0, 1, Vector2(0.995146, 0), -1.17791, 0.0, 1, 0]
+point_count = 2
+
+[sub_resource type="Curve" id="Curve_hisu0"]
+_data = [Vector2(0, 0), 0.0, 0.0, 0, 0, Vector2(1, 1), 1.4, 0.0, 0, 0]
+point_count = 2
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_f4dbg"]
+size = Vector2(10, 30)
+
+[node name="Player" type="CharacterBody2D"]
+script = ExtResource("1_k1xl8")
+
+[node name="FSM" type="Node" parent="."]
+script = ExtResource("2_ipgpa")
+coyote_time = 0.15
+
+[node name="Idle" type="Node" parent="FSM"]
+script = ExtResource("3_4ix4y")
+
+[node name="FallFromAir" type="Node" parent="FSM"]
+script = ExtResource("4_i5k0l")
+fall_speed = 300.0
+time_to_max_fall_speed = 0.3
+velocity_curve = SubResource("Curve_wosqu")
+air_speed = 145.0
+
+[node name="Rise" type="Node" parent="FSM"]
+script = ExtResource("4_fvsv5")
+jump_strength = 210.0
+jump_time = 0.4
+velocity_curve = SubResource("Curve_yg3di")
+air_speed = 140.0
+
+[node name="Run" type="Node" parent="FSM"]
+script = ExtResource("4_5vivc")
+run_speed = 140.0
+velocity_curve = SubResource("Curve_hisu0")
+
+[node name="FallFromGround" type="Node" parent="FSM"]
+script = ExtResource("7_mdj4x")
+
+[node name="LedgeMount" type="Node" parent="FSM"]
+script = ExtResource("8_s4821")
+mount_speed = 45
+
+[node name="PlayerSprite" type="Sprite2D" parent="."]
+texture = ExtResource("9_28t2g")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+visible = false
+position_smoothing_enabled = true
+position_smoothing_speed = 8.0
+drag_horizontal_enabled = true
+drag_vertical_enabled = true
+drag_left_margin = 0.1
+drag_right_margin = 0.1
+
+[node name="BottomCast" type="RayCast2D" parent="."]
+position = Vector2(0, 15)
+target_position = Vector2(0, 0)
+
+[node name="TopCast" type="RayCast2D" parent="."]
+position = Vector2(0, 8)
+target_position = Vector2(0, 0)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-1, 0)
+shape = SubResource("RectangleShape2D_f4dbg")
+
+[node name="debug_text" type="Label" parent="."]
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer"]
+layout_direction = 2
+offset_right = 810.0
+offset_bottom = 200.0
+scale = Vector2(0.08, 0.08)
+size_flags_horizontal = 0
+size_flags_vertical = 0
+theme_override_constants/separation = 15
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer/HBoxContainer"]
+layout_mode = 2
+texture = ExtResource("10_0ppti")
+expand_mode = 3
+script = ExtResource("10_n84r3")
+
+[node name="NoteReactor" type="Node" parent="CanvasLayer/HBoxContainer/TextureRect"]
+script = ExtResource("10_j4ca1")
+note_indeces = [0]
+
+[node name="TextureRect2" type="TextureRect" parent="CanvasLayer/HBoxContainer"]
+layout_mode = 2
+texture = ExtResource("10_0ppti")
+expand_mode = 3
+script = ExtResource("10_n84r3")
+id = 1
+
+[node name="NoteReactor" type="Node" parent="CanvasLayer/HBoxContainer/TextureRect2"]
+script = ExtResource("10_j4ca1")
+note_indeces = [1]
+
+[node name="TextureRect3" type="TextureRect" parent="CanvasLayer/HBoxContainer"]
+layout_mode = 2
+texture = ExtResource("10_0ppti")
+expand_mode = 3
+script = ExtResource("10_n84r3")
+id = 2
+
+[node name="NoteReactor" type="Node" parent="CanvasLayer/HBoxContainer/TextureRect3"]
+script = ExtResource("10_j4ca1")
+note_indeces = [2]
+
+[node name="TextureRect4" type="TextureRect" parent="CanvasLayer/HBoxContainer"]
+layout_mode = 2
+texture = ExtResource("10_0ppti")
+expand_mode = 3
+script = ExtResource("10_n84r3")
+id = 3
+
+[node name="NoteReactor" type="Node" parent="CanvasLayer/HBoxContainer/TextureRect4"]
+script = ExtResource("10_j4ca1")
+note_indeces = [3]
+
+[node name="TextureRect5" type="TextureRect" parent="CanvasLayer/HBoxContainer"]
+layout_mode = 2
+texture = ExtResource("10_0ppti")
+expand_mode = 3
+script = ExtResource("10_n84r3")
+id = 4
+
+[node name="NoteReactor" type="Node" parent="CanvasLayer/HBoxContainer/TextureRect5"]
+script = ExtResource("10_j4ca1")
+note_indeces = [4]
+
+[node name="Crusher" type="Node2D" parent="."]
+script = ExtResource("13_6egvo")
+
+[node name="Top" type="RayCast2D" parent="Crusher"]
+target_position = Vector2(0, -13)
+
+[node name="Bottom" type="RayCast2D" parent="Crusher"]
+target_position = Vector2(0, 13)
+
+[node name="Left" type="RayCast2D" parent="Crusher"]
+target_position = Vector2(-4, 0)
+
+[node name="Right" type="RayCast2D" parent="Crusher"]
+target_position = Vector2(4, 0)

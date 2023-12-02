@@ -1,0 +1,41 @@
+[gd_scene load_steps=8 format=3 uid="uid://d4akn3m1qr1vf"]
+
+[ext_resource type="Script" path="res://Player/player.gd" id="1_k1xl8"]
+[ext_resource type="Script" path="res://Player/FSM.gd" id="2_ipgpa"]
+[ext_resource type="Script" path="res://Player/States/Idle.gd" id="3_4ix4y"]
+[ext_resource type="Script" path="res://Player/States/Run.gd" id="4_5vivc"]
+[ext_resource type="Script" path="res://Player/States/Rise.gd" id="4_fvsv5"]
+[ext_resource type="Script" path="res://Player/States/FallFromAir.gd" id="4_i5k0l"]
+[ext_resource type="Texture2D" uid="uid://b1kksdqjj2in1" path="res://icon.svg" id="6_duj2k"]
+
+[node name="Player" type="Node2D"]
+script = ExtResource("1_k1xl8")
+
+[node name="FSM" type="Node" parent="."]
+script = ExtResource("2_ipgpa")
+
+[node name="Idle" type="Node" parent="FSM"]
+script = ExtResource("3_4ix4y")
+
+[node name="FallFromAir" type="Node" parent="FSM"]
+script = ExtResource("4_i5k0l")
+
+[node name="Rise" type="Node" parent="FSM"]
+script = ExtResource("4_fvsv5")
+jump_strength = null
+jump_time = null
+air_speed = null
+
+[node name="Run" type="Node" parent="FSM"]
+script = ExtResource("4_5vivc")
+
+[node name="PlayerSprite" type="Sprite2D" parent="."]
+texture = ExtResource("6_duj2k")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+
+[node name="BottomCast" type="RayCast2D" parent="."]
+position = Vector2(0, -50)
+
+[node name="TopCast" type="RayCast2D" parent="."]
+position = Vector2(0, 50)

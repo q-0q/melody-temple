@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://bcc7j22qnve3n"]
+
+[ext_resource type="Script" path="res://Scripts/GateColorBlock.gd" id="1_kmmsy"]
+
+[node name="GateColorBlock" type="Node2D"]
+z_index = 5
+script = ExtResource("1_kmmsy")
