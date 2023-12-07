@@ -13,7 +13,7 @@ class_name FSM
 @onready var BottomCast : RayCast2D = $"../BottomCast"
 @onready var TopCast : RayCast2D = $"../TopCast"
 
-# @onready var aq : AnimationQueue = $"../AnimationQueue"
+@onready var anim : AnimationPlayer = $"../AnimationPlayer"
 @onready var PlayerSprite : Sprite2D = $"../PlayerSprite"
 @onready var default_state : State = $Idle
 @onready var Player : CharacterBody2D = $".."
@@ -22,14 +22,11 @@ class_name FSM
 var input_dir : Vector2 = Vector2.ZERO
 var input_jump : bool = false
 var time_since_last_jump : float = input_buffer_length * 2
-var input_dash : bool = false
-var time_since_last_dash : float = input_buffer_length * 2
 
 # bookkeeping
 var current_state : State
 var time_in_current_state : float = 0
 var is_facing_right : bool = true
-var has_dash : bool = false
 
 func _ready():
 	_set_face_dir_from_input()
@@ -43,6 +40,8 @@ func _ready():
 func _process(delta):
 	
 	_read_input(delta)
+	
+	
 	
 	var new_state = _determine_new_state()
 	if new_state != current_state:
@@ -58,6 +57,14 @@ func _process(delta):
 		Player.speed_cache.insert(Player.get_position_delta())
 	else:
 		Player.speed_cache.insert(Vector2.ZERO)
+		
+	if current_state != $Dead and current_state != $Transition:
+		if Notes.is_any_played():
+			anim.play("on")
+			pass
+		else:
+			anim.play("off")
+			pass
 		
 	
 func _read_input(delta):
@@ -77,11 +84,6 @@ func _read_input(delta):
 	if Input.is_action_just_pressed("Jump"): time_since_last_jump = 0
 	input_jump = (time_since_last_jump <= input_buffer_length)
 	time_since_last_jump += delta
-
-	# dash
-	if Input.is_action_just_pressed("Dash"): time_since_last_dash = 0
-	input_dash = (time_since_last_dash <= input_buffer_length)
-	time_since_last_dash += delta
 	
 	# notes
 	if Input.is_action_just_pressed("Note0"): Notes.start_note(0)
@@ -99,6 +101,15 @@ func _read_input(delta):
 	
 func _determine_new_state():
 	
+	if $Dead.condition(): return $Dead
+	if $Transition.condition(): return $Transition
+	
+	if current_state == $Dead:
+		if $Idle.condition(): return $Idle
+		if $Run.condition(): return $Run
+		if $Rise.condition(): return $Rise
+		if $FallFromGround.condition(): return $FallFromGround
+	
 	if current_state == $Idle:
 		if $Run.condition(): return $Run
 		if $Rise.condition(): return $Rise
@@ -112,6 +123,7 @@ func _determine_new_state():
 	if current_state == $Rise:
 		if $FallFromAir.condition(): return $FallFromAir
 		if $LedgeMount.condition(): return $LedgeMount
+		if $Idle.condition(): return $Idle
 		
 	if current_state == $FallFromAir:
 		# if $Land.condition(): return $Land

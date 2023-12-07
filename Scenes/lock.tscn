@@ -1,0 +1,100 @@
+[gd_scene load_steps=9 format=3 uid="uid://o8xd8fx1maf5"]
+
+[ext_resource type="Script" path="res://Scenes/lock.gd" id="1_67m2t"]
+[ext_resource type="Texture2D" uid="uid://cw4ihp6r2b2cq" path="res://Assets/Tilemap/lock.png" id="1_vh2dk"]
+
+[sub_resource type="Curve" id="Curve_dl5to"]
+_data = [Vector2(0, 0), 0.0, 0.234146, 0, 0, Vector2(1, 1), 3.08572, 0.0, 0, 0]
+point_count = 2
+
+[sub_resource type="Animation" id="Animation_wjk0b"]
+resource_name = "open"
+length = 1.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.7, 0.8, 0.9, 1),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 0, 1, 2, 3, 4, 5, 7, 8]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("../StaticBody2D/CollisionShape2D:disabled")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.8),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [false, true]
+}
+
+[sub_resource type="Animation" id="Animation_mggbx"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("../StaticBody2D/CollisionShape2D:disabled")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_6ag2q"]
+_data = {
+"RESET": SubResource("Animation_mggbx"),
+"open": SubResource("Animation_wjk0b")
+}
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_5xanu"]
+size = Vector2(32, 32)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_3ehxl"]
+radius = 99.0051
+
+[node name="lock" type="Node2D"]
+script = ExtResource("1_67m2t")
+curve = SubResource("Curve_dl5to")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+root_node = NodePath("../Sprite2D")
+libraries = {
+"": SubResource("AnimationLibrary_6ag2q")
+}
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_vh2dk")
+hframes = 9
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+visible = false
+shape = SubResource("RectangleShape2D_5xanu")
+
+[node name="Area2D" type="Area2D" parent="." groups=["Locks"]]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("CircleShape2D_3ehxl")

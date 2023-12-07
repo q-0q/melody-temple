@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://bi7ea6hjxp4l0"]
+
+[ext_resource type="AudioStream" uid="uid://c7x8d0o5sk8f8" path="res://Assets/sounds/stone.wav" id="1_q1smb"]
+[ext_resource type="Script" path="res://Scripts/MPSound.gd" id="2_bfkbr"]
+
+[node name="MPSound" type="AudioStreamPlayer2D"]
+stream = ExtResource("1_q1smb")
+volume_db = -80.0
+max_distance = 450.0
+attenuation = 2.0
+script = ExtResource("2_bfkbr")

@@ -11,6 +11,10 @@ func _init(size:int):
 	arr.fill(Vector2.ZERO)
 	head = 0
 
+func clear():
+	arr.fill(Vector2.ZERO)
+	head = 0
+	
 func insert(el):
 	arr[head] = el
 	head += 1

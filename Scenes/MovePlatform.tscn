@@ -1,7 +1,10 @@
-[gd_scene load_steps=2 format=3 uid="uid://gdqr7jdbc4hf"]
+[gd_scene load_steps=3 format=3 uid="uid://gdqr7jdbc4hf"]
 
 [ext_resource type="Script" path="res://Scripts/MovePlatform.gd" id="1_bv31b"]
+[ext_resource type="PackedScene" uid="uid://bi7ea6hjxp4l0" path="res://Scenes/mp_sound.tscn" id="2_065y0"]
 
 [node name="MovePlatform" type="Node2D"]
 z_index = -1
 script = ExtResource("1_bv31b")
+
+[node name="MPSound" parent="." instance=ExtResource("2_065y0")]

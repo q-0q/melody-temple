@@ -4,6 +4,9 @@ extends State
 @export var jump_time : float
 @export var velocity_curve : Curve
 @export var air_speed : float = 100.0
+
+@export var n_curve : Curve
+
 var time_elapsed : float = 0
 var boost_timer : float = 0
 var jump_held : bool = true
@@ -11,20 +14,21 @@ var enter_velocity : Vector2 = Vector2.ZERO
 var boost_time : float = 0.45
 var launch_threshhold : float = 0
 var current_boost : Vector2 = Vector2.ZERO
+var shook : bool = false
 
 
 
 func on_enter():
+	shook = false
 	enter_velocity = Player.speed_cache.get_min()
 	if enter_velocity.length() < launch_threshhold: enter_velocity = Vector2.ZERO
+
 	current_boost = enter_velocity * 30
 	FSM.time_since_last_jump = FSM.input_buffer_length * 2
 	jump_held = true
 	time_elapsed = 0.0
 	boost_timer = 0.0
-	
-	print(current_boost)
-	
+		
 func on_exit():
 	pass
 	
@@ -44,7 +48,9 @@ func on_update(delta):
 		time_elapsed += delta
 
 	else:
-		print(current_boost.y)
+		if !shook:
+			NoiseManager.do_shake(12,70, n_curve, 1)
+			shook = true
 		current_boost.y += (delta * 1500)
 		Player.velocity.y = current_boost.y
 	

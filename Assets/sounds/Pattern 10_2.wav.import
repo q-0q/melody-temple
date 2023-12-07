@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://cd8q1mgmy4bi8"
+path="res://.godot/imported/Pattern 10_2.wav-ccff14a68c88bd727c74ba648e1bc544.sample"
+
+[deps]
+
+source_file="res://Assets/sounds/Pattern 10_2.wav"
+dest_files=["res://.godot/imported/Pattern 10_2.wav-ccff14a68c88bd727c74ba648e1bc544.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=3
+edit/loop_begin=5000
+edit/loop_end=20000
+compress/mode=0

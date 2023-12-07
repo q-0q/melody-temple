@@ -1,23 +1,12 @@
-[gd_scene load_steps=6 format=3 uid="uid://c222vvqb6fus0"]
+[gd_scene load_steps=8 format=3 uid="uid://c222vvqb6fus0"]
 
 [ext_resource type="PackedScene" uid="uid://d4akn3m1qr1vf" path="res://Player/player.tscn" id="1_cj1ux"]
 [ext_resource type="PackedScene" uid="uid://bu13563gnejg4" path="res://Scenes/Gate.tscn" id="2_2anq0"]
 [ext_resource type="TileSet" uid="uid://bacss81iyy8d1" path="res://Assets/Tilemap/melody.tres" id="3_4t8ww"]
-[ext_resource type="Texture2D" uid="uid://bpgljy6qrn1mu" path="res://Assets/Backgrounds/clouds1.png" id="4_x0ajn"]
-
-[sub_resource type="Environment" id="Environment_as2us"]
-background_mode = 3
-glow_enabled = true
-glow_intensity = 0.85
-glow_strength = 0.34
-glow_blend_mode = 0
-glow_hdr_threshold = 0.0
-glow_hdr_scale = 0.25
-glow_hdr_luminance_cap = 14.0
-glow_map_strength = 0.35
-adjustment_enabled = true
-adjustment_contrast = 0.8
-adjustment_saturation = 1.5
+[ext_resource type="Script" path="res://Scripts/NoteReactor.gd" id="3_ia7rv"]
+[ext_resource type="Texture2D" uid="uid://b7f06dxheuku0" path="res://Assets/Tilemap/clouds2.png" id="5_nqcyq"]
+[ext_resource type="PackedScene" uid="uid://badqol3aqgx3u" path="res://Scenes/Portal.tscn" id="6_4w77n"]
+[ext_resource type="Environment" uid="uid://beb7ls66itbce" path="res://levels/env.tres" id="6_g514w"]
 
 [node name="lvl1" type="Node2D"]
 
@@ -25,6 +14,10 @@ adjustment_saturation = 1.5
 
 [node name="Gate" parent="." instance=ExtResource("2_2anq0")]
 position = Vector2(720, -96)
+
+[node name="NoteReactor" type="Node" parent="Gate"]
+script = ExtResource("3_ia7rv")
+note_indeces = [0, 2, 4]
 
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = ExtResource("3_4t8ww")
@@ -49,9 +42,14 @@ layer_2/tile_data = PackedInt32Array(393210, 0, 5, 327674, 65536, 3, 327675, 655
 scroll_base_scale = Vector2(1.05, 1.05)
 
 [node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_mirroring = Vector2(1000, 1000)
 
 [node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
-texture = ExtResource("4_x0ajn")
+texture = ExtResource("5_nqcyq")
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
-environment = SubResource("Environment_as2us")
+environment = ExtResource("6_g514w")
+
+[node name="Portal" parent="." instance=ExtResource("6_4w77n")]
+position = Vector2(855, -96)
+next_level_path = "res://levels/lvl2.tscn"

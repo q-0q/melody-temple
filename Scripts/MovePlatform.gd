@@ -10,6 +10,9 @@ class_name MovePlatform
 var target : Vector2 = Vector2.ZERO
 var curve_position : float = 0
 
+var sound_on : bool = false
+var pos_delt : Vector2 = Vector2.ZERO
+
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -19,7 +22,7 @@ func _ready():
 	add_child(reactor)
 	
 	
-	$TileMap.modulate = Notes.colors[note_id]
+	$TileMap.self_modulate = Notes.colors[note_id]
 	$TileMap.collision_animatable = true
 	
 	if path.get_point_position(0) != Vector2.ZERO:
@@ -27,11 +30,11 @@ func _ready():
 		get_tree().quit()
 	
 func _draw():
-	print("drawing")
 	draw_line(path.get_point_position(0), path.get_point_position(1), Notes.colors[note_id] * Color(0.05, 0.05, 0.05, 1), 4)
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _physics_process(delta):
+		
 	if $NoteReactor.is_reacted():
 		curve_position += delta * speed_multiplier
 	else:
@@ -39,6 +42,7 @@ func _physics_process(delta):
 	
 	curve_position = clampf(curve_position, 0, 1)
 	target = Vector2.ZERO.lerp(path.get_point_position(1), speed_curve.sample(curve_position))
+	pos_delt = $TileMap.position - (target + Vector2(8,8))
 	$TileMap.position = target + Vector2(8,8)
 
 	
