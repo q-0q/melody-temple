@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="BigMode Game jam"
-run/main_scene="res://levels/menu.tscn"
+run/main_scene="res://levels/lvl3.tscn"
 config/features=PackedStringArray("4.1", "Forward Plus")
 run/max_fps=60
 boot_splash/show_image=false

@@ -18,6 +18,10 @@ func is_steep_enough():
 	if !FSM.BottomCast.is_colliding(): return false
 	var angle = FSM.BottomCast.get_collision_normal().angle()
 	return (abs(angle) <= 0.5) or (abs(abs(angle)-3.14159) <= 0.5)
+
+func is_hazard():
+	if !FSM.BottomCast.is_colliding(): return false
+	return (FSM.BottomCast.get_collider().get_collision_layer() == 2)
 	
 func on_update(delta):
 	if FSM.BottomCast.is_colliding() and is_steep_enough():
@@ -33,6 +37,7 @@ func on_update(delta):
 func condition():
 	return (
 	FSM.BottomCast.is_colliding() and
+	!FSM.HazardCast.is_colliding() and
 	is_steep_enough() and
 	!FSM.TopCast.is_colliding()
 	)

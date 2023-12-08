@@ -48,9 +48,6 @@ func on_update(delta):
 		time_elapsed += delta
 
 	else:
-		if !shook:
-			NoiseManager.do_shake(12,70, n_curve, 1)
-			shook = true
 		current_boost.y += (delta * 1500)
 		Player.velocity.y = current_boost.y
 	

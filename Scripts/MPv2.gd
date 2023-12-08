@@ -12,6 +12,9 @@ var curve_position : float = 0
 var end_pos : Vector2
 var pos_delt : Vector2
 
+@export var auto : bool = false
+var auto_on : bool = true
+
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -26,23 +29,41 @@ func _ready():
 	
 	end_pos = end_coord * 16
 	
-	$TileMap.self_modulate = Notes.colors[note_id]
+	if !auto: $TileMap.self_modulate = Notes.colors[note_id]
 	$TileMap.collision_animatable = true
 	
 func _draw():
 	print("drawing")
-	draw_line(Vector2.ZERO, end_pos, Notes.colors[note_id] * Color(0.05, 0.05, 0.05, 1), 4)
+	var color : Color
+	if auto: color = Color.WHITE
+	else: color = Notes.colors[note_id]
+	draw_line(Vector2.ZERO, end_pos, color * Color(0.05, 0.05, 0.05, 1), 4)
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _physics_process(delta):
-	if $NoteReactor.is_reacted():
-		curve_position += delta * speed_multiplier
-	else:
-		curve_position -= delta * speed_multiplier
+	
+	if auto: auto_move(delta)
+	else: player_move(delta)
 	
 	curve_position = clampf(curve_position, 0, 1)
 	target = Vector2.ZERO.lerp(end_pos, speed_curve.sample(curve_position))
 	pos_delt = $TileMap.position - (target + Vector2(8,8))
 	$TileMap.position = target + Vector2(8,8)
-
 	
+func player_move(delta):
+	if $NoteReactor.is_reacted():
+		curve_position += delta * speed_multiplier
+	else:
+		curve_position -= delta * speed_multiplier
+
+func auto_move(delta):
+	if auto_on and curve_position >= 1:
+		auto_on = false
+	if !auto_on and curve_position <= 0:
+		auto_on = true
+		
+	if auto_on:
+		curve_position += delta * speed_multiplier
+	else:
+		curve_position -= delta * speed_multiplier
+		

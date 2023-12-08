@@ -12,6 +12,7 @@ class_name FSM
 # references
 @onready var BottomCast : RayCast2D = $"../BottomCast"
 @onready var TopCast : RayCast2D = $"../TopCast"
+@onready var HazardCast : RayCast2D = $"../HazardCast"
 
 @onready var anim : AnimationPlayer = $"../AnimationPlayer"
 @onready var PlayerSprite : Sprite2D = $"../PlayerSprite"
@@ -164,11 +165,13 @@ func _set_face_dir(dir : bool):
 		is_facing_right = true
 		BottomCast.target_position.x = cast_distance
 		TopCast.target_position.x = cast_distance
+		HazardCast.target_position.x = cast_distance
 		PlayerSprite.scale.x = 1;
 	else:
 		is_facing_right = false
 		BottomCast.target_position.x = -cast_distance
 		TopCast.target_position.x = -cast_distance
+		HazardCast.target_position.x = -cast_distance
 		PlayerSprite.scale.x = -1;
 		
 func _flip_face_dir():
