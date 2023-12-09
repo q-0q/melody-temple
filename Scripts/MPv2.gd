@@ -41,7 +41,7 @@ func _draw():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _physics_process(delta):
-	
+		
 	if auto: auto_move(delta)
 	else: player_move(delta)
 	

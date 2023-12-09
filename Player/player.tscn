@@ -294,10 +294,10 @@ target_position = Vector2(0, -13)
 target_position = Vector2(0, 13)
 
 [node name="Left" type="RayCast2D" parent="Crusher"]
-target_position = Vector2(-4, 0)
+target_position = Vector2(-6, 0)
 
 [node name="Right" type="RayCast2D" parent="Crusher"]
-target_position = Vector2(4, 0)
+target_position = Vector2(6, 0)
 
 [node name="Hazard" type="Node2D" parent="."]
 script = ExtResource("14_o7e37")

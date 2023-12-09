@@ -34,6 +34,7 @@ func _draw():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _physics_process(delta):
+	
 		
 	if $NoteReactor.is_reacted():
 		curve_position += delta * speed_multiplier

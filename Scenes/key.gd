@@ -35,11 +35,13 @@ func _process(delta):
 	position = position.lerp(target + offset, delta * 3)
 
 func _on_area_2d_body_entered(body):
+	if !body is Player: return
 	if found_lock: return
 	picked_up = true
 	offset = Vector2(randf_range(-15,15),randf_range(-3,3))
 
 func _on_area_2d_area_entered(area):
+	if found_lock: return
 	if area.is_in_group("Locks"):
 		if area.get_parent().got_a_key: return
 		lock = area.get_parent()
