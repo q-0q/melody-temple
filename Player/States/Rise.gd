@@ -5,8 +5,6 @@ extends State
 @export var velocity_curve : Curve
 @export var air_speed : float = 100.0
 
-@export var n_curve : Curve
-
 var time_elapsed : float = 0
 var boost_timer : float = 0
 var jump_held : bool = true
@@ -14,14 +12,18 @@ var enter_velocity : Vector2 = Vector2.ZERO
 var boost_time : float = 0.45
 var launch_threshhold : float = 0
 var current_boost : Vector2 = Vector2.ZERO
-var shook : bool = false
+var cast : RayCast2D
 
 
+func _ready():
+	pass
 
 func on_enter():
-	shook = false
-	enter_velocity = Player.speed_cache.get_min()
-	if enter_velocity.length() < launch_threshhold: enter_velocity = Vector2.ZERO
+	var mp = get_mp()
+	if mp != null:
+		enter_velocity = mp.report_speed()
+	else:
+		enter_velocity = Vector2.ZERO
 
 	current_boost = enter_velocity * 30
 	FSM.time_since_last_jump = FSM.input_buffer_length * 2
@@ -77,3 +79,10 @@ func do_jump_animation():
 	else:
 		FSM.aq.play("rise3")
 		
+func get_mp():
+
+	for cast in Player.get_node("FloorCasts").get_children():
+		if !cast.is_colliding(): continue
+		var parent = cast.get_collider().get_parent()
+		if parent is MPv2: return parent
+	return null

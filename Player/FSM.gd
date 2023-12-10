@@ -53,12 +53,7 @@ func _process(delta):
 		
 	current_state.on_update(delta)
 	time_in_current_state += delta
-	
-	if current_state == $Run or current_state == $Idle:
-		Player.speed_cache.insert(Player.get_position_delta())
-	else:
-		Player.speed_cache.insert(Vector2.ZERO)
-		
+			
 	if current_state != $Dead and current_state != $Transition:
 		if Notes.is_any_played():
 			anim.play("on")

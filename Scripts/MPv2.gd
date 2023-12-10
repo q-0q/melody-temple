@@ -2,6 +2,8 @@ extends Node2D
 
 class_name MPv2
 
+
+
 @export var note_id : int = 0
 @export var end_coord : Vector2i
 @export var speed_curve: Curve
@@ -14,6 +16,10 @@ var pos_delt : Vector2
 
 @export var auto : bool = false
 var auto_on : bool = true
+var speed_cache = CircularQueue.new(25)
+
+@export var rotate_mode : bool = false
+@export var degrees : float = 0.0
 
 
 # Called when the node enters the scene tree for the first time.
@@ -33,7 +39,6 @@ func _ready():
 	$TileMap.collision_animatable = true
 	
 func _draw():
-	print("drawing")
 	var color : Color
 	if auto: color = Color.WHITE
 	else: color = Notes.colors[note_id]
@@ -46,9 +51,12 @@ func _physics_process(delta):
 	else: player_move(delta)
 	
 	curve_position = clampf(curve_position, 0, 1)
-	target = Vector2.ZERO.lerp(end_pos, speed_curve.sample(curve_position))
-	pos_delt = $TileMap.position - (target + Vector2(8,8))
-	$TileMap.position = target + Vector2(8,8)
+	
+	if rotate_mode:
+		rot()
+	else:
+		move()
+	
 	
 func player_move(delta):
 	if $NoteReactor.is_reacted():
@@ -66,4 +74,19 @@ func auto_move(delta):
 		curve_position += delta * speed_multiplier
 	else:
 		curve_position -= delta * speed_multiplier
-		
+
+func report_speed():
+	var parent_report : Vector2 = Vector2.ZERO
+	if get_parent().get_parent() is MPv2:
+		parent_report = get_parent().get_parent().report_speed()
+	print(parent_report + speed_cache.get_min())
+	return parent_report + speed_cache.get_min()
+
+func move():
+	target = Vector2.ZERO.lerp(end_pos, speed_curve.sample(curve_position))
+	pos_delt = $TileMap.position - (target + Vector2(8,8))
+	$TileMap.position = target + Vector2(8,8)
+	speed_cache.insert(-pos_delt)
+	
+func rot():
+	$TileMap.rotation_degrees = degrees * speed_curve.sample(curve_position)

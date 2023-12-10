@@ -4,7 +4,7 @@ class_name Player
 
 @onready var FSM : FSM = $FSM
 
-var speed_cache = CircularQueue.new(18)
+# 18
 var respawn_pos : Vector2
 var is_dead : bool = false
 var next_level : bool = false
@@ -30,7 +30,6 @@ func _process(delta):
 
 func do_player_death():
 	is_dead = true
-	speed_cache.clear()
 	print("PLAYER DEATH")
 	
 func set_respawn(pos):
