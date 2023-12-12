@@ -1,8 +1,9 @@
-[gd_scene load_steps=5 format=3 uid="uid://cpicccurfcqbp"]
+[gd_scene load_steps=6 format=3 uid="uid://cpicccurfcqbp"]
 
 [ext_resource type="Script" path="res://Scripts/menu.gd" id="1_1b6aq"]
-[ext_resource type="Texture2D" uid="uid://bpgljy6qrn1mu" path="res://Assets/Backgrounds/clouds1.png" id="1_jardp"]
+[ext_resource type="Texture2D" uid="uid://b7f06dxheuku0" path="res://Assets/Tilemap/clouds2.png" id="2_4qf4k"]
 [ext_resource type="Script" path="res://Scripts/menubackground.gd" id="2_j3u2n"]
+[ext_resource type="Environment" uid="uid://beb7ls66itbce" path="res://levels/env.tres" id="4_6ml40"]
 
 [sub_resource type="SystemFont" id="SystemFont_0qlvp"]
 
@@ -46,9 +47,12 @@ text = "Options"
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 z_index = -1
-position = Vector2(296, 107)
-texture = ExtResource("1_jardp")
+position = Vector2(122, 288)
+texture = ExtResource("2_4qf4k")
 script = ExtResource("2_j3u2n")
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = ExtResource("4_6ml40")
 
 [connection signal="pressed" from="VBoxContainer/HBoxContainer/Button" to="." method="start_pressed"]
 [connection signal="pressed" from="VBoxContainer/HBoxContainer/Button2" to="." method="options_pressed"]

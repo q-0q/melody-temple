@@ -37,6 +37,7 @@ func _process(delta):
 func _on_area_2d_body_entered(body):
 	if !body is Player: return
 	if found_lock: return
+	$Sound.play()
 	picked_up = true
 	offset = Vector2(randf_range(-15,15),randf_range(-3,3))
 

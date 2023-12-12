@@ -10,7 +10,7 @@ _data = [Vector2(0, 0), 0.0, 0.0, 0, 0, Vector2(0.504505, 1), 0.0, 0.0, 0, 0, Ve
 point_count = 4
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_2uhl7"]
-size = Vector2(15, 122)
+size = Vector2(35, 122)
 
 [sub_resource type="Animation" id="Animation_52vuf"]
 length = 0.001
@@ -148,7 +148,7 @@ hframes = 12
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
-position = Vector2(0.5, -13)
+position = Vector2(10.5, -13)
 shape = SubResource("RectangleShape2D_2uhl7")
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D"]

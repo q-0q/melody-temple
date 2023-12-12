@@ -6,6 +6,7 @@ extends Node2D
 
 func _on_area_2d_body_entered(body):
 	if is_entrance: return
+	Sounds.get_node("Next").play()
 	NoiseManager.do_shake(10,70, n_curve, 3)
 	body.next_level = true
 	SceneManager.load_level(next_level_path)

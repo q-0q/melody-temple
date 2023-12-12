@@ -13,7 +13,7 @@ func _ready():
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 
-	if global_position.distance_squared_to(Util.player_pos) > 20000: return
+	if global_position.distance_squared_to(Util.player_pos) > 30000: return
 	
 	if $NoteReactor.is_reacted_exclusive() and !is_open:
 		$AnimationPlayer.play("open")

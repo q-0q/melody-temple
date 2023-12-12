@@ -1,7 +1,8 @@
-[gd_scene load_steps=8 format=3 uid="uid://c4k4s24h4kva3"]
+[gd_scene load_steps=9 format=3 uid="uid://c4k4s24h4kva3"]
 
 [ext_resource type="Script" path="res://Scenes/key.gd" id="1_lldpj"]
 [ext_resource type="Texture2D" uid="uid://dmo6xslni8d3m" path="res://Assets/Tilemap/key.png" id="1_vtcrn"]
+[ext_resource type="AudioStream" uid="uid://6phelnov4sms" path="res://Assets/sounds/key_get.wav" id="3_5nnny"]
 
 [sub_resource type="Animation" id="Animation_bv4p3"]
 length = 0.001
@@ -93,6 +94,10 @@ collision_mask = 5
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
 shape = SubResource("CircleShape2D_730lf")
+
+[node name="Sound" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("3_5nnny")
+volume_db = -6.0
 
 [connection signal="area_entered" from="Area2D" to="." method="_on_area_2d_area_entered"]
 [connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]

@@ -16,7 +16,7 @@ var pos_delt : Vector2
 
 @export var auto : bool = false
 var auto_on : bool = true
-var speed_cache = CircularQueue.new(25)
+var speed_cache = CircularQueue.new(125)
 
 @export var rotate_mode : bool = false
 @export var degrees : float = 0.0
@@ -77,11 +77,14 @@ func auto_move(delta):
 
 func report_speed():
 	var parent_report : Vector2 = Vector2.ZERO
+	
 	if get_parent().get_parent() is MPv2:
 		parent_report = get_parent().get_parent().report_speed()
-	print(parent_report + speed_cache.get_min())
-	return parent_report + speed_cache.get_min()
-
+		
+	var out = parent_report + speed_cache.get_min().rotated(get_parent().rotation)
+	print(out)
+	return out
+	
 func move():
 	target = Vector2.ZERO.lerp(end_pos, speed_curve.sample(curve_position))
 	pos_delt = $TileMap.position - (target + Vector2(8,8))

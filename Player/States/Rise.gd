@@ -19,13 +19,15 @@ func _ready():
 	pass
 
 func on_enter():
+	is_too_fast()
+	$Sound.play()
 	var mp = get_mp()
 	if mp != null:
 		enter_velocity = mp.report_speed()
 	else:
 		enter_velocity = Vector2.ZERO
 
-	current_boost = enter_velocity * 30
+	current_boost = enter_velocity * 125
 	FSM.time_since_last_jump = FSM.input_buffer_length * 2
 	jump_held = true
 	time_elapsed = 0.0
@@ -86,3 +88,8 @@ func get_mp():
 		var parent = cast.get_collider().get_parent()
 		if parent is MPv2: return parent
 	return null
+
+func is_too_fast():
+	var mp = get_mp()
+	if mp == null: return false
+	print(mp.pos_delt)

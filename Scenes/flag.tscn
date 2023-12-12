@@ -1,7 +1,8 @@
-[gd_scene load_steps=10 format=3 uid="uid://b5rbffvftab5p"]
+[gd_scene load_steps=11 format=3 uid="uid://b5rbffvftab5p"]
 
 [ext_resource type="Texture2D" uid="uid://dmyvxstmdg8nr" path="res://Assets/Tilemap/flag.png" id="1_oaj04"]
 [ext_resource type="Script" path="res://Scenes/flag.gd" id="1_rewgf"]
+[ext_resource type="AudioStream" uid="uid://dp26iykol7h3x" path="res://Assets/sounds/flag.wav" id="3_1tyio"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_20g6c"]
 size = Vector2(8, 14)
@@ -119,5 +120,9 @@ process_material = SubResource("ParticleProcessMaterial_n8jo0")
 lifetime = 2.0
 one_shot = true
 explosiveness = 1.0
+
+[node name="Sound" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("3_1tyio")
+volume_db = -2.0
 
 [connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]

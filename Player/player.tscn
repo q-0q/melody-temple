@@ -1,4 +1,4 @@
-[gd_scene load_steps=30 format=3 uid="uid://d4akn3m1qr1vf"]
+[gd_scene load_steps=31 format=3 uid="uid://d4akn3m1qr1vf"]
 
 [ext_resource type="Script" path="res://Player/player.gd" id="1_k1xl8"]
 [ext_resource type="Script" path="res://Player/FSM.gd" id="2_ipgpa"]
@@ -6,6 +6,7 @@
 [ext_resource type="Script" path="res://Player/States/Run.gd" id="4_5vivc"]
 [ext_resource type="Script" path="res://Player/States/Rise.gd" id="4_fvsv5"]
 [ext_resource type="Script" path="res://Player/States/FallFromAir.gd" id="4_i5k0l"]
+[ext_resource type="AudioStream" uid="uid://7x5dnteketmj" path="res://Assets/sounds/jump.wav" id="6_odv0a"]
 [ext_resource type="Script" path="res://Player/States/FallFromGround.gd" id="7_mdj4x"]
 [ext_resource type="Script" path="res://Player/Dead.gd" id="8_8xj0a"]
 [ext_resource type="Script" path="res://Player/States/LedgeMount.gd" id="8_s4821"]
@@ -118,6 +119,7 @@ _data = {
 [node name="Player" type="CharacterBody2D"]
 z_index = 5
 collision_mask = 3
+collision_priority = 1000.0
 script = ExtResource("1_k1xl8")
 n_curve = SubResource("Curve_wbysg")
 
@@ -142,6 +144,10 @@ jump_strength = 210.0
 jump_time = 0.4
 velocity_curve = SubResource("Curve_yg3di")
 air_speed = 140.0
+
+[node name="Sound" type="AudioStreamPlayer" parent="FSM/Rise"]
+stream = ExtResource("6_odv0a")
+volume_db = -6.0
 
 [node name="Run" type="Node" parent="FSM"]
 script = ExtResource("4_5vivc")
@@ -211,7 +217,6 @@ position = Vector2(-1, 0)
 shape = SubResource("RectangleShape2D_f4dbg")
 
 [node name="debug_text" type="Label" parent="."]
-visible = false
 offset_right = 40.0
 offset_bottom = 23.0
 

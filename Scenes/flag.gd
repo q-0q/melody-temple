@@ -16,5 +16,6 @@ func _on_area_2d_body_entered(body):
 	$AnimationPlayer.play("hit")
 	body.set_respawn(position + Vector2(0, -16))
 	if !is_on:
+		$Sound.play()
 		$GPUParticles2D.emitting = true
 		is_on = true
