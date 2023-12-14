@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://bcqw5hxmgwwn1"]
+[gd_scene load_steps=11 format=3 uid="uid://bcqw5hxmgwwn1"]
 
 [ext_resource type="AudioStream" uid="uid://cd8q1mgmy4bi8" path="res://Assets/sounds/Pattern 10_2.wav" id="1_i3ljd"]
 [ext_resource type="AudioStream" uid="uid://dop53086vgsdx" path="res://Assets/sounds/Pattern 10_3.wav" id="2_a6yrn"]
@@ -7,6 +7,7 @@
 [ext_resource type="AudioStream" uid="uid://dxfpqjb3vku8s" path="res://Assets/sounds/Pattern 10_6.wav" id="5_8y0l2"]
 [ext_resource type="AudioStream" uid="uid://5ti43t8idtv0" path="res://Assets/sounds/music1.ogg" id="6_c3gc2"]
 [ext_resource type="AudioStream" uid="uid://b8icx23m7xhln" path="res://Assets/sounds/music2.ogg" id="7_htfyh"]
+[ext_resource type="AudioStream" uid="uid://cug7lerde4sgv" path="res://Assets/sounds/music3.ogg" id="8_p8tie"]
 [ext_resource type="AudioStream" uid="uid://c1a78mxo6oj3x" path="res://Assets/sounds/next.wav" id="8_rypgp"]
 [ext_resource type="AudioStream" uid="uid://cyqrdtgxdm85d" path="res://Assets/sounds/coin.wav" id="9_6d1jw"]
 
@@ -34,6 +35,11 @@ autoplay = true
 
 [node name="Music2" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("7_htfyh")
+volume_db = -80.0
+autoplay = true
+
+[node name="Music3" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("8_p8tie")
 volume_db = -80.0
 autoplay = true
 

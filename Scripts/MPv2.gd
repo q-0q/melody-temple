@@ -16,10 +16,13 @@ var pos_delt : Vector2
 
 @export var auto : bool = false
 var auto_on : bool = true
-var speed_cache = CircularQueue.new(125)
+var speed_cache = CircularQueue.new(37)
 
 @export var rotate_mode : bool = false
 @export var degrees : float = 0.0
+@export var loop : bool = false
+@export var deg_offset : float = 0.0
+
 
 
 # Called when the node enters the scene tree for the first time.
@@ -63,6 +66,8 @@ func player_move(delta):
 		curve_position += delta * speed_multiplier
 	else:
 		curve_position -= delta * speed_multiplier
+	
+	if loop and curve_position >= 1: curve_position = 0
 
 func auto_move(delta):
 	if auto_on and curve_position >= 1:
@@ -74,6 +79,8 @@ func auto_move(delta):
 		curve_position += delta * speed_multiplier
 	else:
 		curve_position -= delta * speed_multiplier
+	
+	if loop and curve_position >= 1: curve_position = 0
 
 func report_speed():
 	var parent_report : Vector2 = Vector2.ZERO
@@ -81,7 +88,7 @@ func report_speed():
 	if get_parent().get_parent() is MPv2:
 		parent_report = get_parent().get_parent().report_speed()
 		
-	var out = parent_report + speed_cache.get_min().rotated(get_parent().rotation)
+	var out = parent_report + speed_cache.get_min().rotated(global_rotation)
 	print(out)
 	return out
 	
@@ -92,4 +99,4 @@ func move():
 	speed_cache.insert(-pos_delt)
 	
 func rot():
-	$TileMap.rotation_degrees = degrees * speed_curve.sample(curve_position)
+	$TileMap.rotation_degrees = (degrees * speed_curve.sample(curve_position)) + deg_offset

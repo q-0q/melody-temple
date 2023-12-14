@@ -38,7 +38,7 @@ func _ready():
 		
 	current_state = default_state
 		
-func _process(delta):
+func _physics_process(delta):
 	
 	_read_input(delta)
 	

@@ -27,7 +27,7 @@ func on_enter():
 	else:
 		enter_velocity = Vector2.ZERO
 
-	current_boost = enter_velocity * 125
+	current_boost = enter_velocity * 65
 	FSM.time_since_last_jump = FSM.input_buffer_length * 2
 	jump_held = true
 	time_elapsed = 0.0
@@ -52,7 +52,7 @@ func on_update(delta):
 		time_elapsed += delta
 
 	else:
-		current_boost.y += (delta * 1500)
+		current_boost.y += (delta * 2500)
 		Player.velocity.y = current_boost.y
 	
 	if abs(current_boost.x) <= air_speed:
@@ -92,4 +92,3 @@ func get_mp():
 func is_too_fast():
 	var mp = get_mp()
 	if mp == null: return false
-	print(mp.pos_delt)

@@ -12,6 +12,8 @@ texture = ExtResource("1_afuvj")
 0:0/0/physics_layer_1/angular_velocity = 0.0
 0:0/0/physics_layer_2/linear_velocity = Vector2(0, 0)
 0:0/0/physics_layer_2/angular_velocity = 0.0
+0:0/0/physics_layer_3/linear_velocity = Vector2(0, 0)
+0:0/0/physics_layer_3/angular_velocity = 0.0
 0:0/0/metadata/_better_terrain = {
 0: [0, 3, 7],
 3: [0, 3, 7],
@@ -26,6 +28,8 @@ texture = ExtResource("1_afuvj")
 1:0/0/physics_layer_1/angular_velocity = 0.0
 1:0/0/physics_layer_2/linear_velocity = Vector2(0, 0)
 1:0/0/physics_layer_2/angular_velocity = 0.0
+1:0/0/physics_layer_3/linear_velocity = Vector2(0, 0)
+1:0/0/physics_layer_3/angular_velocity = 0.0
 1:0/0/metadata/_better_terrain = {
 0: [0, 3, 7],
 3: [0, 3, 7],
@@ -42,6 +46,8 @@ texture = ExtResource("1_afuvj")
 2:0/0/physics_layer_1/angular_velocity = 0.0
 2:0/0/physics_layer_2/linear_velocity = Vector2(0, 0)
 2:0/0/physics_layer_2/angular_velocity = 0.0
+2:0/0/physics_layer_3/linear_velocity = Vector2(0, 0)
+2:0/0/physics_layer_3/angular_velocity = 0.0
 2:0/0/metadata/_better_terrain = {
 4: [0, 3, 7],
 7: [0, 3, 7],
@@ -56,6 +62,8 @@ texture = ExtResource("1_afuvj")
 3:0/0/physics_layer_1/angular_velocity = 0.0
 3:0/0/physics_layer_2/linear_velocity = Vector2(0, 0)
 3:0/0/physics_layer_2/angular_velocity = 0.0
+3:0/0/physics_layer_3/linear_velocity = Vector2(0, 0)
+3:0/0/physics_layer_3/angular_velocity = 0.0
 3:0/0/metadata/_better_terrain = {
 0: [0, 3, 7],
 3: [0, 3, 7],
@@ -74,6 +82,8 @@ texture = ExtResource("1_afuvj")
 4:0/0/physics_layer_1/angular_velocity = 0.0
 4:0/0/physics_layer_2/linear_velocity = Vector2(0, 0)
 4:0/0/physics_layer_2/angular_velocity = 0.0
+4:0/0/physics_layer_3/linear_velocity = Vector2(0, 0)
+4:0/0/physics_layer_3/angular_velocity = 0.0
 4:0/0/metadata/_better_terrain = {
 0: [0, 3, 7],
 3: [0, 3, 7],
@@ -91,6 +101,8 @@ texture = ExtResource("1_afuvj")
 5:0/0/physics_layer_1/angular_velocity = 0.0
 5:0/0/physics_layer_2/linear_velocity = Vector2(0, 0)
 5:0/0/physics_layer_2/angular_velocity = 0.0
+5:0/0/physics_layer_3/linear_velocity = Vector2(0, 0)
+5:0/0/physics_layer_3/angular_velocity = 0.0
 5:0/0/metadata/_better_terrain = {
 4: [2],
 "type": 2
@@ -103,6 +115,8 @@ texture = ExtResource("1_afuvj")
 0:1/0/physics_layer_1/angular_velocity = 0.0
 0:1/0/physics_layer_2/linear_velocity = Vector2(0, 0)
 0:1/0/physics_layer_2/angular_velocity = 0.0
+0:1/0/physics_layer_3/linear_velocity = Vector2(0, 0)
+0:1/0/physics_layer_3/angular_velocity = 0.0
 0:1/0/metadata/_better_terrain = {
 0: [0, 3, 7],
 3: [0, 3, 7],
@@ -119,6 +133,8 @@ texture = ExtResource("1_afuvj")
 1:1/0/physics_layer_1/angular_velocity = 0.0
 1:1/0/physics_layer_2/linear_velocity = Vector2(0, 0)
 1:1/0/physics_layer_2/angular_velocity = 0.0
+1:1/0/physics_layer_3/linear_velocity = Vector2(0, 0)
+1:1/0/physics_layer_3/angular_velocity = 0.0
 1:1/0/metadata/_better_terrain = {
 0: [0, 3, 7],
 3: [0, 3, 7],
@@ -138,6 +154,8 @@ texture = ExtResource("1_afuvj")
 2:1/0/physics_layer_1/angular_velocity = 0.0
 2:1/0/physics_layer_2/linear_velocity = Vector2(0, 0)
 2:1/0/physics_layer_2/angular_velocity = 0.0
+2:1/0/physics_layer_3/linear_velocity = Vector2(0, 0)
+2:1/0/physics_layer_3/angular_velocity = 0.0
 2:1/0/metadata/_better_terrain = {
 4: [0, 3, 7],
 7: [0, 3, 7],
@@ -154,6 +172,8 @@ texture = ExtResource("1_afuvj")
 3:1/0/physics_layer_1/angular_velocity = 0.0
 3:1/0/physics_layer_2/linear_velocity = Vector2(0, 0)
 3:1/0/physics_layer_2/angular_velocity = 0.0
+3:1/0/physics_layer_3/linear_velocity = Vector2(0, 0)
+3:1/0/physics_layer_3/angular_velocity = 0.0
 3:1/0/metadata/_better_terrain = {
 0: [0, 3, 7],
 3: [0, 3, 7],
@@ -172,6 +192,8 @@ texture = ExtResource("1_afuvj")
 4:1/0/physics_layer_1/angular_velocity = 0.0
 4:1/0/physics_layer_2/linear_velocity = Vector2(0, 0)
 4:1/0/physics_layer_2/angular_velocity = 0.0
+4:1/0/physics_layer_3/linear_velocity = Vector2(0, 0)
+4:1/0/physics_layer_3/angular_velocity = 0.0
 4:1/0/metadata/_better_terrain = {
 0: [0, 3, 7],
 4: [0, 3, 7],
@@ -189,6 +211,8 @@ texture = ExtResource("1_afuvj")
 5:1/0/physics_layer_1/angular_velocity = 0.0
 5:1/0/physics_layer_2/linear_velocity = Vector2(0, 0)
 5:1/0/physics_layer_2/angular_velocity = 0.0
+5:1/0/physics_layer_3/linear_velocity = Vector2(0, 0)
+5:1/0/physics_layer_3/angular_velocity = 0.0
 5:1/0/metadata/_better_terrain = {
 4: [2],
 12: [2],
@@ -202,6 +226,8 @@ texture = ExtResource("1_afuvj")
 0:2/0/physics_layer_1/angular_velocity = 0.0
 0:2/0/physics_layer_2/linear_velocity = Vector2(0, 0)
 0:2/0/physics_layer_2/angular_velocity = 0.0
+0:2/0/physics_layer_3/linear_velocity = Vector2(0, 0)
+0:2/0/physics_layer_3/angular_velocity = 0.0
 0:2/0/metadata/_better_terrain = {
 0: [0, 3, 7],
 12: [0, 3, 7],
@@ -216,6 +242,8 @@ texture = ExtResource("1_afuvj")
 1:2/0/physics_layer_1/angular_velocity = 0.0
 1:2/0/physics_layer_2/linear_velocity = Vector2(0, 0)
 1:2/0/physics_layer_2/angular_velocity = 0.0
+1:2/0/physics_layer_3/linear_velocity = Vector2(0, 0)
+1:2/0/physics_layer_3/angular_velocity = 0.0
 1:2/0/metadata/_better_terrain = {
 0: [0, 3, 7],
 8: [0, 3, 7],
@@ -232,6 +260,8 @@ texture = ExtResource("1_afuvj")
 2:2/0/physics_layer_1/angular_velocity = 0.0
 2:2/0/physics_layer_2/linear_velocity = Vector2(0, 0)
 2:2/0/physics_layer_2/angular_velocity = 0.0
+2:2/0/physics_layer_3/linear_velocity = Vector2(0, 0)
+2:2/0/physics_layer_3/angular_velocity = 0.0
 2:2/0/metadata/_better_terrain = {
 8: [0, 3, 7],
 11: [0, 3, 7],
@@ -245,6 +275,8 @@ texture = ExtResource("1_afuvj")
 5:2/0/physics_layer_1/angular_velocity = 0.0
 5:2/0/physics_layer_2/linear_velocity = Vector2(0, 0)
 5:2/0/physics_layer_2/angular_velocity = 0.0
+5:2/0/physics_layer_3/linear_velocity = Vector2(0, 0)
+5:2/0/physics_layer_3/angular_velocity = 0.0
 5:2/0/metadata/_better_terrain = {
 12: [2],
 "type": 2
@@ -256,6 +288,8 @@ texture = ExtResource("1_afuvj")
 0:3/0/physics_layer_1/angular_velocity = 0.0
 0:3/0/physics_layer_2/linear_velocity = Vector2(0, 0)
 0:3/0/physics_layer_2/angular_velocity = 0.0
+0:3/0/physics_layer_3/linear_velocity = Vector2(0, 0)
+0:3/0/physics_layer_3/angular_velocity = 0.0
 0:3/0/metadata/_better_terrain = {
 0: [1],
 4: [1],
@@ -268,6 +302,8 @@ texture = ExtResource("1_afuvj")
 1:3/0/physics_layer_1/angular_velocity = 0.0
 1:3/0/physics_layer_2/linear_velocity = Vector2(0, 0)
 1:3/0/physics_layer_2/angular_velocity = 0.0
+1:3/0/physics_layer_3/linear_velocity = Vector2(0, 0)
+1:3/0/physics_layer_3/angular_velocity = 0.0
 1:3/0/metadata/_better_terrain = {
 0: [1],
 4: [1],
@@ -281,6 +317,8 @@ texture = ExtResource("1_afuvj")
 2:3/0/physics_layer_1/angular_velocity = 0.0
 2:3/0/physics_layer_2/linear_velocity = Vector2(0, 0)
 2:3/0/physics_layer_2/angular_velocity = 0.0
+2:3/0/physics_layer_3/linear_velocity = Vector2(0, 0)
+2:3/0/physics_layer_3/angular_velocity = 0.0
 2:3/0/metadata/_better_terrain = {
 4: [1],
 8: [1],
@@ -293,6 +331,8 @@ texture = ExtResource("1_afuvj")
 5:3/0/physics_layer_1/angular_velocity = 0.0
 5:3/0/physics_layer_2/linear_velocity = Vector2(0, 0)
 5:3/0/physics_layer_2/angular_velocity = 0.0
+5:3/0/physics_layer_3/linear_velocity = Vector2(0, 0)
+5:3/0/physics_layer_3/angular_velocity = 0.0
 0:4/0 = 0
 0:4/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 0:4/0/physics_layer_0/angular_velocity = 0.0
@@ -300,6 +340,8 @@ texture = ExtResource("1_afuvj")
 0:4/0/physics_layer_1/angular_velocity = 0.0
 0:4/0/physics_layer_2/linear_velocity = Vector2(0, 0)
 0:4/0/physics_layer_2/angular_velocity = 0.0
+0:4/0/physics_layer_3/linear_velocity = Vector2(0, 0)
+0:4/0/physics_layer_3/angular_velocity = 0.0
 0:4/0/metadata/_better_terrain = {
 0: [1],
 4: [1],
@@ -313,6 +355,8 @@ texture = ExtResource("1_afuvj")
 1:4/0/physics_layer_1/angular_velocity = 0.0
 1:4/0/physics_layer_2/linear_velocity = Vector2(0, 0)
 1:4/0/physics_layer_2/angular_velocity = 0.0
+1:4/0/physics_layer_3/linear_velocity = Vector2(0, 0)
+1:4/0/physics_layer_3/angular_velocity = 0.0
 1:4/0/metadata/_better_terrain = {
 0: [1],
 4: [1],
@@ -327,6 +371,8 @@ texture = ExtResource("1_afuvj")
 2:4/0/physics_layer_1/angular_velocity = 0.0
 2:4/0/physics_layer_2/linear_velocity = Vector2(0, 0)
 2:4/0/physics_layer_2/angular_velocity = 0.0
+2:4/0/physics_layer_3/linear_velocity = Vector2(0, 0)
+2:4/0/physics_layer_3/angular_velocity = 0.0
 2:4/0/metadata/_better_terrain = {
 4: [1],
 8: [1],
@@ -340,6 +386,8 @@ texture = ExtResource("1_afuvj")
 5:4/0/physics_layer_1/angular_velocity = 0.0
 5:4/0/physics_layer_2/linear_velocity = Vector2(0, 0)
 5:4/0/physics_layer_2/angular_velocity = 0.0
+5:4/0/physics_layer_3/linear_velocity = Vector2(0, 0)
+5:4/0/physics_layer_3/angular_velocity = 0.0
 0:5/0 = 0
 0:5/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 0:5/0/physics_layer_0/angular_velocity = 0.0
@@ -347,6 +395,8 @@ texture = ExtResource("1_afuvj")
 0:5/0/physics_layer_1/angular_velocity = 0.0
 0:5/0/physics_layer_2/linear_velocity = Vector2(0, 0)
 0:5/0/physics_layer_2/angular_velocity = 0.0
+0:5/0/physics_layer_3/linear_velocity = Vector2(0, 0)
+0:5/0/physics_layer_3/angular_velocity = 0.0
 0:5/0/metadata/_better_terrain = {
 0: [1],
 12: [1],
@@ -359,6 +409,8 @@ texture = ExtResource("1_afuvj")
 1:5/0/physics_layer_1/angular_velocity = 0.0
 1:5/0/physics_layer_2/linear_velocity = Vector2(0, 0)
 1:5/0/physics_layer_2/angular_velocity = 0.0
+1:5/0/physics_layer_3/linear_velocity = Vector2(0, 0)
+1:5/0/physics_layer_3/angular_velocity = 0.0
 1:5/0/metadata/_better_terrain = {
 0: [1],
 8: [1],
@@ -372,6 +424,8 @@ texture = ExtResource("1_afuvj")
 2:5/0/physics_layer_1/angular_velocity = 0.0
 2:5/0/physics_layer_2/linear_velocity = Vector2(0, 0)
 2:5/0/physics_layer_2/angular_velocity = 0.0
+2:5/0/physics_layer_3/linear_velocity = Vector2(0, 0)
+2:5/0/physics_layer_3/angular_velocity = 0.0
 2:5/0/metadata/_better_terrain = {
 8: [1],
 12: [1],
@@ -384,6 +438,8 @@ texture = ExtResource("1_afuvj")
 5:5/0/physics_layer_1/angular_velocity = 0.0
 5:5/0/physics_layer_2/linear_velocity = Vector2(0, 0)
 5:5/0/physics_layer_2/angular_velocity = 0.0
+5:5/0/physics_layer_3/linear_velocity = Vector2(0, 0)
+5:5/0/physics_layer_3/angular_velocity = 0.0
 0:6/0 = 0
 0:6/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 0:6/0/physics_layer_0/angular_velocity = 0.0
@@ -392,6 +448,8 @@ texture = ExtResource("1_afuvj")
 0:6/0/physics_layer_1/angular_velocity = 0.0
 0:6/0/physics_layer_2/linear_velocity = Vector2(0, 0)
 0:6/0/physics_layer_2/angular_velocity = 0.0
+0:6/0/physics_layer_3/linear_velocity = Vector2(0, 0)
+0:6/0/physics_layer_3/angular_velocity = 0.0
 0:6/0/metadata/_better_terrain = {
 0: [4],
 "type": 4
@@ -404,6 +462,8 @@ texture = ExtResource("1_afuvj")
 1:6/0/physics_layer_1/angular_velocity = 0.0
 1:6/0/physics_layer_2/linear_velocity = Vector2(0, 0)
 1:6/0/physics_layer_2/angular_velocity = 0.0
+1:6/0/physics_layer_3/linear_velocity = Vector2(0, 0)
+1:6/0/physics_layer_3/angular_velocity = 0.0
 1:6/0/metadata/_better_terrain = {
 0: [4],
 8: [4],
@@ -417,6 +477,8 @@ texture = ExtResource("1_afuvj")
 2:6/0/physics_layer_1/angular_velocity = 0.0
 2:6/0/physics_layer_2/linear_velocity = Vector2(0, 0)
 2:6/0/physics_layer_2/angular_velocity = 0.0
+2:6/0/physics_layer_3/linear_velocity = Vector2(0, 0)
+2:6/0/physics_layer_3/angular_velocity = 0.0
 2:6/0/metadata/_better_terrain = {
 8: [4],
 "type": 4
@@ -429,6 +491,8 @@ texture = ExtResource("1_afuvj")
 0:7/0/physics_layer_1/angular_velocity = 0.0
 0:7/0/physics_layer_2/linear_velocity = Vector2(0, 0)
 0:7/0/physics_layer_2/angular_velocity = 0.0
+0:7/0/physics_layer_3/linear_velocity = Vector2(0, 0)
+0:7/0/physics_layer_3/angular_velocity = 0.0
 1:7/0 = 0
 1:7/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 1:7/0/physics_layer_0/angular_velocity = 0.0
@@ -437,6 +501,8 @@ texture = ExtResource("1_afuvj")
 1:7/0/physics_layer_1/angular_velocity = 0.0
 1:7/0/physics_layer_2/linear_velocity = Vector2(0, 0)
 1:7/0/physics_layer_2/angular_velocity = 0.0
+1:7/0/physics_layer_3/linear_velocity = Vector2(0, 0)
+1:7/0/physics_layer_3/angular_velocity = 0.0
 2:7/0 = 0
 2:7/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 2:7/0/physics_layer_0/angular_velocity = 0.0
@@ -445,6 +511,8 @@ texture = ExtResource("1_afuvj")
 2:7/0/physics_layer_1/angular_velocity = 0.0
 2:7/0/physics_layer_2/linear_velocity = Vector2(0, 0)
 2:7/0/physics_layer_2/angular_velocity = 0.0
+2:7/0/physics_layer_3/linear_velocity = Vector2(0, 0)
+2:7/0/physics_layer_3/angular_velocity = 0.0
 3:7/0 = 0
 3:7/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 3:7/0/physics_layer_0/angular_velocity = 0.0
@@ -452,6 +520,8 @@ texture = ExtResource("1_afuvj")
 3:7/0/physics_layer_1/angular_velocity = 0.0
 3:7/0/physics_layer_2/linear_velocity = Vector2(0, 0)
 3:7/0/physics_layer_2/angular_velocity = 0.0
+3:7/0/physics_layer_3/linear_velocity = Vector2(0, 0)
+3:7/0/physics_layer_3/angular_velocity = 0.0
 4:7/0 = 0
 4:7/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 4:7/0/physics_layer_0/angular_velocity = 0.0
@@ -459,6 +529,8 @@ texture = ExtResource("1_afuvj")
 4:7/0/physics_layer_1/angular_velocity = 0.0
 4:7/0/physics_layer_2/linear_velocity = Vector2(0, 0)
 4:7/0/physics_layer_2/angular_velocity = 0.0
+4:7/0/physics_layer_3/linear_velocity = Vector2(0, 0)
+4:7/0/physics_layer_3/angular_velocity = 0.0
 5:7/0 = 0
 5:7/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 5:7/0/physics_layer_0/angular_velocity = 0.0
@@ -466,6 +538,8 @@ texture = ExtResource("1_afuvj")
 5:7/0/physics_layer_1/angular_velocity = 0.0
 5:7/0/physics_layer_2/linear_velocity = Vector2(0, 0)
 5:7/0/physics_layer_2/angular_velocity = 0.0
+5:7/0/physics_layer_3/linear_velocity = Vector2(0, 0)
+5:7/0/physics_layer_3/angular_velocity = 0.0
 0:8/0 = 0
 0:8/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 0:8/0/physics_layer_0/angular_velocity = 0.0
@@ -474,6 +548,8 @@ texture = ExtResource("1_afuvj")
 0:8/0/physics_layer_1/angular_velocity = 0.0
 0:8/0/physics_layer_2/linear_velocity = Vector2(0, 0)
 0:8/0/physics_layer_2/angular_velocity = 0.0
+0:8/0/physics_layer_3/linear_velocity = Vector2(0, 0)
+0:8/0/physics_layer_3/angular_velocity = 0.0
 0:8/0/metadata/_better_terrain = {
 0: [0, 3, 7],
 3: [0, 3, 7],
@@ -488,6 +564,8 @@ texture = ExtResource("1_afuvj")
 1:8/0/physics_layer_1/angular_velocity = 0.0
 1:8/0/physics_layer_2/linear_velocity = Vector2(0, 0)
 1:8/0/physics_layer_2/angular_velocity = 0.0
+1:8/0/physics_layer_3/linear_velocity = Vector2(0, 0)
+1:8/0/physics_layer_3/angular_velocity = 0.0
 1:8/0/metadata/_better_terrain = {
 0: [0, 3, 7],
 3: [0, 3, 7],
@@ -504,6 +582,8 @@ texture = ExtResource("1_afuvj")
 2:8/0/physics_layer_1/angular_velocity = 0.0
 2:8/0/physics_layer_2/linear_velocity = Vector2(0, 0)
 2:8/0/physics_layer_2/angular_velocity = 0.0
+2:8/0/physics_layer_3/linear_velocity = Vector2(0, 0)
+2:8/0/physics_layer_3/angular_velocity = 0.0
 2:8/0/metadata/_better_terrain = {
 4: [0, 3, 7],
 7: [0, 3, 7],
@@ -517,6 +597,8 @@ texture = ExtResource("1_afuvj")
 3:8/0/physics_layer_1/angular_velocity = 0.0
 3:8/0/physics_layer_2/linear_velocity = Vector2(0, 0)
 3:8/0/physics_layer_2/angular_velocity = 0.0
+3:8/0/physics_layer_3/linear_velocity = Vector2(0, 0)
+3:8/0/physics_layer_3/angular_velocity = 0.0
 3:8/0/metadata/_better_terrain = {
 0: [2],
 "type": 2
@@ -528,6 +610,8 @@ texture = ExtResource("1_afuvj")
 4:8/0/physics_layer_1/angular_velocity = 0.0
 4:8/0/physics_layer_2/linear_velocity = Vector2(0, 0)
 4:8/0/physics_layer_2/angular_velocity = 0.0
+4:8/0/physics_layer_3/linear_velocity = Vector2(0, 0)
+4:8/0/physics_layer_3/angular_velocity = 0.0
 4:8/0/metadata/_better_terrain = {
 0: [2],
 8: [2],
@@ -540,6 +624,8 @@ texture = ExtResource("1_afuvj")
 5:8/0/physics_layer_1/angular_velocity = 0.0
 5:8/0/physics_layer_2/linear_velocity = Vector2(0, 0)
 5:8/0/physics_layer_2/angular_velocity = 0.0
+5:8/0/physics_layer_3/linear_velocity = Vector2(0, 0)
+5:8/0/physics_layer_3/angular_velocity = 0.0
 5:8/0/metadata/_better_terrain = {
 8: [2],
 "type": 2
@@ -552,6 +638,8 @@ texture = ExtResource("1_afuvj")
 6:0/0/physics_layer_1/angular_velocity = 0.0
 6:0/0/physics_layer_2/linear_velocity = Vector2(0, 0)
 6:0/0/physics_layer_2/angular_velocity = 0.0
+6:0/0/physics_layer_3/linear_velocity = Vector2(0, 0)
+6:0/0/physics_layer_3/angular_velocity = 0.0
 6:0/0/metadata/_better_terrain = {
 4: [5],
 "type": 5
@@ -564,6 +652,8 @@ texture = ExtResource("1_afuvj")
 6:1/0/physics_layer_1/angular_velocity = 0.0
 6:1/0/physics_layer_2/linear_velocity = Vector2(0, 0)
 6:1/0/physics_layer_2/angular_velocity = 0.0
+6:1/0/physics_layer_3/linear_velocity = Vector2(0, 0)
+6:1/0/physics_layer_3/angular_velocity = 0.0
 6:1/0/metadata/_better_terrain = {
 4: [5],
 12: [5],
@@ -577,6 +667,8 @@ texture = ExtResource("1_afuvj")
 6:2/0/physics_layer_1/angular_velocity = 0.0
 6:2/0/physics_layer_2/linear_velocity = Vector2(0, 0)
 6:2/0/physics_layer_2/angular_velocity = 0.0
+6:2/0/physics_layer_3/linear_velocity = Vector2(0, 0)
+6:2/0/physics_layer_3/angular_velocity = 0.0
 6:2/0/metadata/_better_terrain = {
 12: [5],
 "type": 5
@@ -589,6 +681,8 @@ texture = ExtResource("1_afuvj")
 7:2/0/physics_layer_1/angular_velocity = 0.0
 7:2/0/physics_layer_2/linear_velocity = Vector2(0, 0)
 7:2/0/physics_layer_2/angular_velocity = 0.0
+7:2/0/physics_layer_3/linear_velocity = Vector2(0, 0)
+7:2/0/physics_layer_3/angular_velocity = 0.0
 7:2/0/metadata/_better_terrain = {
 0: [5],
 12: [5],
@@ -602,6 +696,8 @@ texture = ExtResource("1_afuvj")
 8:2/0/physics_layer_1/angular_velocity = 0.0
 8:2/0/physics_layer_2/linear_velocity = Vector2(0, 0)
 8:2/0/physics_layer_2/angular_velocity = 0.0
+8:2/0/physics_layer_3/linear_velocity = Vector2(0, 0)
+8:2/0/physics_layer_3/angular_velocity = 0.0
 8:2/0/metadata/_better_terrain = {
 8: [5],
 12: [5],
@@ -615,6 +711,8 @@ texture = ExtResource("1_afuvj")
 8:1/0/physics_layer_1/angular_velocity = 0.0
 8:1/0/physics_layer_2/linear_velocity = Vector2(0, 0)
 8:1/0/physics_layer_2/angular_velocity = 0.0
+8:1/0/physics_layer_3/linear_velocity = Vector2(0, 0)
+8:1/0/physics_layer_3/angular_velocity = 0.0
 8:1/0/metadata/_better_terrain = {
 4: [5],
 8: [5],
@@ -628,6 +726,8 @@ texture = ExtResource("1_afuvj")
 8:0/0/physics_layer_1/angular_velocity = 0.0
 8:0/0/physics_layer_2/linear_velocity = Vector2(0, 0)
 8:0/0/physics_layer_2/angular_velocity = 0.0
+8:0/0/physics_layer_3/linear_velocity = Vector2(0, 0)
+8:0/0/physics_layer_3/angular_velocity = 0.0
 8:0/0/metadata/_better_terrain = {
 0: [5],
 8: [5],
@@ -641,6 +741,8 @@ texture = ExtResource("1_afuvj")
 7:0/0/physics_layer_1/angular_velocity = 0.0
 7:0/0/physics_layer_2/linear_velocity = Vector2(0, 0)
 7:0/0/physics_layer_2/angular_velocity = 0.0
+7:0/0/physics_layer_3/linear_velocity = Vector2(0, 0)
+7:0/0/physics_layer_3/angular_velocity = 0.0
 7:0/0/metadata/_better_terrain = {
 0: [5],
 "type": 5
@@ -653,6 +755,8 @@ texture = ExtResource("1_afuvj")
 7:1/0/physics_layer_1/angular_velocity = 0.0
 7:1/0/physics_layer_2/linear_velocity = Vector2(0, 0)
 7:1/0/physics_layer_2/angular_velocity = 0.0
+7:1/0/physics_layer_3/linear_velocity = Vector2(0, 0)
+7:1/0/physics_layer_3/angular_velocity = 0.0
 7:1/0/metadata/_better_terrain = {
 0: [5],
 4: [5],
@@ -666,6 +770,8 @@ texture = ExtResource("1_afuvj")
 9:0/0/physics_layer_1/angular_velocity = 0.0
 9:0/0/physics_layer_2/linear_velocity = Vector2(0, 0)
 9:0/0/physics_layer_2/angular_velocity = 0.0
+9:0/0/physics_layer_3/linear_velocity = Vector2(0, 0)
+9:0/0/physics_layer_3/angular_velocity = 0.0
 9:0/0/metadata/_better_terrain = {
 8: [5],
 "type": 5
@@ -678,6 +784,8 @@ texture = ExtResource("1_afuvj")
 6:3/0/physics_layer_1/angular_velocity = 0.0
 6:3/0/physics_layer_2/linear_velocity = Vector2(0, 0)
 6:3/0/physics_layer_2/angular_velocity = 0.0
+6:3/0/physics_layer_3/linear_velocity = Vector2(0, 0)
+6:3/0/physics_layer_3/angular_velocity = 0.0
 7:3/0 = 0
 7:3/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 7:3/0/physics_layer_0/angular_velocity = 0.0
@@ -686,6 +794,8 @@ texture = ExtResource("1_afuvj")
 7:3/0/physics_layer_1/angular_velocity = 0.0
 7:3/0/physics_layer_2/linear_velocity = Vector2(0, 0)
 7:3/0/physics_layer_2/angular_velocity = 0.0
+7:3/0/physics_layer_3/linear_velocity = Vector2(0, 0)
+7:3/0/physics_layer_3/angular_velocity = 0.0
 8:3/0 = 0
 8:3/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 8:3/0/physics_layer_0/angular_velocity = 0.0
@@ -694,6 +804,8 @@ texture = ExtResource("1_afuvj")
 8:3/0/physics_layer_1/angular_velocity = 0.0
 8:3/0/physics_layer_2/linear_velocity = Vector2(0, 0)
 8:3/0/physics_layer_2/angular_velocity = 0.0
+8:3/0/physics_layer_3/linear_velocity = Vector2(0, 0)
+8:3/0/physics_layer_3/angular_velocity = 0.0
 9:3/0 = 0
 9:3/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 9:3/0/physics_layer_0/angular_velocity = 0.0
@@ -702,6 +814,8 @@ texture = ExtResource("1_afuvj")
 9:3/0/physics_layer_1/angular_velocity = 0.0
 9:3/0/physics_layer_2/linear_velocity = Vector2(0, 0)
 9:3/0/physics_layer_2/angular_velocity = 0.0
+9:3/0/physics_layer_3/linear_velocity = Vector2(0, 0)
+9:3/0/physics_layer_3/angular_velocity = 0.0
 7:4/0 = 0
 7:4/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 7:4/0/physics_layer_0/angular_velocity = 0.0
@@ -710,6 +824,8 @@ texture = ExtResource("1_afuvj")
 7:4/0/physics_layer_1/angular_velocity = 0.0
 7:4/0/physics_layer_2/linear_velocity = Vector2(0, 0)
 7:4/0/physics_layer_2/angular_velocity = 0.0
+7:4/0/physics_layer_3/linear_velocity = Vector2(0, 0)
+7:4/0/physics_layer_3/angular_velocity = 0.0
 6:4/0 = 0
 6:4/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 6:4/0/physics_layer_0/angular_velocity = 0.0
@@ -718,6 +834,8 @@ texture = ExtResource("1_afuvj")
 6:4/0/physics_layer_1/angular_velocity = 0.0
 6:4/0/physics_layer_2/linear_velocity = Vector2(0, 0)
 6:4/0/physics_layer_2/angular_velocity = 0.0
+6:4/0/physics_layer_3/linear_velocity = Vector2(0, 0)
+6:4/0/physics_layer_3/angular_velocity = 0.0
 6:5/0 = 0
 6:5/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 6:5/0/physics_layer_0/angular_velocity = 0.0
@@ -726,6 +844,8 @@ texture = ExtResource("1_afuvj")
 6:5/0/physics_layer_1/angular_velocity = 0.0
 6:5/0/physics_layer_2/linear_velocity = Vector2(0, 0)
 6:5/0/physics_layer_2/angular_velocity = 0.0
+6:5/0/physics_layer_3/linear_velocity = Vector2(0, 0)
+6:5/0/physics_layer_3/angular_velocity = 0.0
 7:5/0 = 0
 7:5/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 7:5/0/physics_layer_0/angular_velocity = 0.0
@@ -734,6 +854,8 @@ texture = ExtResource("1_afuvj")
 7:5/0/physics_layer_1/angular_velocity = 0.0
 7:5/0/physics_layer_2/linear_velocity = Vector2(0, 0)
 7:5/0/physics_layer_2/angular_velocity = 0.0
+7:5/0/physics_layer_3/linear_velocity = Vector2(0, 0)
+7:5/0/physics_layer_3/angular_velocity = 0.0
 8:5/0 = 0
 8:5/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 8:5/0/physics_layer_0/angular_velocity = 0.0
@@ -742,6 +864,8 @@ texture = ExtResource("1_afuvj")
 8:5/0/physics_layer_1/angular_velocity = 0.0
 8:5/0/physics_layer_2/linear_velocity = Vector2(0, 0)
 8:5/0/physics_layer_2/angular_velocity = 0.0
+8:5/0/physics_layer_3/linear_velocity = Vector2(0, 0)
+8:5/0/physics_layer_3/angular_velocity = 0.0
 8:4/0 = 0
 8:4/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 8:4/0/physics_layer_0/angular_velocity = 0.0
@@ -750,6 +874,8 @@ texture = ExtResource("1_afuvj")
 8:4/0/physics_layer_1/angular_velocity = 0.0
 8:4/0/physics_layer_2/linear_velocity = Vector2(0, 0)
 8:4/0/physics_layer_2/angular_velocity = 0.0
+8:4/0/physics_layer_3/linear_velocity = Vector2(0, 0)
+8:4/0/physics_layer_3/angular_velocity = 0.0
 6:6/0 = 0
 6:6/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 6:6/0/physics_layer_0/angular_velocity = 0.0
@@ -758,6 +884,8 @@ texture = ExtResource("1_afuvj")
 6:6/0/physics_layer_1/angular_velocity = 0.0
 6:6/0/physics_layer_2/linear_velocity = Vector2(0, 0)
 6:6/0/physics_layer_2/angular_velocity = 0.0
+6:6/0/physics_layer_3/linear_velocity = Vector2(0, 0)
+6:6/0/physics_layer_3/angular_velocity = 0.0
 6:6/0/metadata/_better_terrain = {
 0: [7],
 3: [7],
@@ -772,6 +900,8 @@ texture = ExtResource("1_afuvj")
 6:7/0/physics_layer_1/angular_velocity = 0.0
 6:7/0/physics_layer_2/linear_velocity = Vector2(0, 0)
 6:7/0/physics_layer_2/angular_velocity = 0.0
+6:7/0/physics_layer_3/linear_velocity = Vector2(0, 0)
+6:7/0/physics_layer_3/angular_velocity = 0.0
 6:7/0/metadata/_better_terrain = {
 0: [7],
 3: [7],
@@ -788,6 +918,8 @@ texture = ExtResource("1_afuvj")
 6:8/0/physics_layer_1/angular_velocity = 0.0
 6:8/0/physics_layer_2/linear_velocity = Vector2(0, 0)
 6:8/0/physics_layer_2/angular_velocity = 0.0
+6:8/0/physics_layer_3/linear_velocity = Vector2(0, 0)
+6:8/0/physics_layer_3/angular_velocity = 0.0
 6:8/0/metadata/_better_terrain = {
 0: [7],
 12: [7],
@@ -802,6 +934,8 @@ texture = ExtResource("1_afuvj")
 7:8/0/physics_layer_1/angular_velocity = 0.0
 7:8/0/physics_layer_2/linear_velocity = Vector2(0, 0)
 7:8/0/physics_layer_2/angular_velocity = 0.0
+7:8/0/physics_layer_3/linear_velocity = Vector2(0, 0)
+7:8/0/physics_layer_3/angular_velocity = 0.0
 7:8/0/metadata/_better_terrain = {
 0: [7],
 8: [7],
@@ -818,6 +952,8 @@ texture = ExtResource("1_afuvj")
 8:8/0/physics_layer_1/angular_velocity = 0.0
 8:8/0/physics_layer_2/linear_velocity = Vector2(0, 0)
 8:8/0/physics_layer_2/angular_velocity = 0.0
+8:8/0/physics_layer_3/linear_velocity = Vector2(0, 0)
+8:8/0/physics_layer_3/angular_velocity = 0.0
 8:8/0/metadata/_better_terrain = {
 8: [7],
 11: [7],
@@ -832,6 +968,8 @@ texture = ExtResource("1_afuvj")
 8:7/0/physics_layer_1/angular_velocity = 0.0
 8:7/0/physics_layer_2/linear_velocity = Vector2(0, 0)
 8:7/0/physics_layer_2/angular_velocity = 0.0
+8:7/0/physics_layer_3/linear_velocity = Vector2(0, 0)
+8:7/0/physics_layer_3/angular_velocity = 0.0
 8:7/0/metadata/_better_terrain = {
 4: [7],
 7: [7],
@@ -848,6 +986,8 @@ texture = ExtResource("1_afuvj")
 8:6/0/physics_layer_1/angular_velocity = 0.0
 8:6/0/physics_layer_2/linear_velocity = Vector2(0, 0)
 8:6/0/physics_layer_2/angular_velocity = 0.0
+8:6/0/physics_layer_3/linear_velocity = Vector2(0, 0)
+8:6/0/physics_layer_3/angular_velocity = 0.0
 8:6/0/metadata/_better_terrain = {
 4: [7],
 7: [7],
@@ -862,6 +1002,8 @@ texture = ExtResource("1_afuvj")
 7:6/0/physics_layer_1/angular_velocity = 0.0
 7:6/0/physics_layer_2/linear_velocity = Vector2(0, 0)
 7:6/0/physics_layer_2/angular_velocity = 0.0
+7:6/0/physics_layer_3/linear_velocity = Vector2(0, 0)
+7:6/0/physics_layer_3/angular_velocity = 0.0
 7:6/0/metadata/_better_terrain = {
 0: [7],
 3: [7],
@@ -878,6 +1020,8 @@ texture = ExtResource("1_afuvj")
 7:7/0/physics_layer_1/angular_velocity = 0.0
 7:7/0/physics_layer_2/linear_velocity = Vector2(0, 0)
 7:7/0/physics_layer_2/angular_velocity = 0.0
+7:7/0/physics_layer_3/linear_velocity = Vector2(0, 0)
+7:7/0/physics_layer_3/angular_velocity = 0.0
 7:7/0/metadata/_better_terrain = {
 0: [7],
 3: [7],
@@ -896,6 +1040,8 @@ texture = ExtResource("1_afuvj")
 10:0/0/physics_layer_1/angular_velocity = 0.0
 10:0/0/physics_layer_2/linear_velocity = Vector2(0, 0)
 10:0/0/physics_layer_2/angular_velocity = 0.0
+10:0/0/physics_layer_3/linear_velocity = Vector2(0, 0)
+10:0/0/physics_layer_3/angular_velocity = 0.0
 10:0/0/metadata/_better_terrain = {
 0: [8],
 4: [8],
@@ -908,6 +1054,8 @@ texture = ExtResource("1_afuvj")
 10:1/0/physics_layer_1/angular_velocity = 0.0
 10:1/0/physics_layer_2/linear_velocity = Vector2(0, 0)
 10:1/0/physics_layer_2/angular_velocity = 0.0
+10:1/0/physics_layer_3/linear_velocity = Vector2(0, 0)
+10:1/0/physics_layer_3/angular_velocity = 0.0
 10:1/0/metadata/_better_terrain = {
 0: [8],
 4: [8],
@@ -921,6 +1069,8 @@ texture = ExtResource("1_afuvj")
 10:2/0/physics_layer_1/angular_velocity = 0.0
 10:2/0/physics_layer_2/linear_velocity = Vector2(0, 0)
 10:2/0/physics_layer_2/angular_velocity = 0.0
+10:2/0/physics_layer_3/linear_velocity = Vector2(0, 0)
+10:2/0/physics_layer_3/angular_velocity = 0.0
 10:2/0/metadata/_better_terrain = {
 0: [8],
 12: [8],
@@ -933,6 +1083,8 @@ texture = ExtResource("1_afuvj")
 11:2/0/physics_layer_1/angular_velocity = 0.0
 11:2/0/physics_layer_2/linear_velocity = Vector2(0, 0)
 11:2/0/physics_layer_2/angular_velocity = 0.0
+11:2/0/physics_layer_3/linear_velocity = Vector2(0, 0)
+11:2/0/physics_layer_3/angular_velocity = 0.0
 11:2/0/metadata/_better_terrain = {
 0: [8],
 8: [8],
@@ -946,6 +1098,8 @@ texture = ExtResource("1_afuvj")
 12:2/0/physics_layer_1/angular_velocity = 0.0
 12:2/0/physics_layer_2/linear_velocity = Vector2(0, 0)
 12:2/0/physics_layer_2/angular_velocity = 0.0
+12:2/0/physics_layer_3/linear_velocity = Vector2(0, 0)
+12:2/0/physics_layer_3/angular_velocity = 0.0
 12:2/0/metadata/_better_terrain = {
 8: [8],
 12: [8],
@@ -958,6 +1112,8 @@ texture = ExtResource("1_afuvj")
 12:1/0/physics_layer_1/angular_velocity = 0.0
 12:1/0/physics_layer_2/linear_velocity = Vector2(0, 0)
 12:1/0/physics_layer_2/angular_velocity = 0.0
+12:1/0/physics_layer_3/linear_velocity = Vector2(0, 0)
+12:1/0/physics_layer_3/angular_velocity = 0.0
 12:1/0/metadata/_better_terrain = {
 4: [8],
 8: [8],
@@ -971,6 +1127,8 @@ texture = ExtResource("1_afuvj")
 12:0/0/physics_layer_1/angular_velocity = 0.0
 12:0/0/physics_layer_2/linear_velocity = Vector2(0, 0)
 12:0/0/physics_layer_2/angular_velocity = 0.0
+12:0/0/physics_layer_3/linear_velocity = Vector2(0, 0)
+12:0/0/physics_layer_3/angular_velocity = 0.0
 12:0/0/metadata/_better_terrain = {
 4: [8],
 8: [8],
@@ -983,6 +1141,8 @@ texture = ExtResource("1_afuvj")
 11:0/0/physics_layer_1/angular_velocity = 0.0
 11:0/0/physics_layer_2/linear_velocity = Vector2(0, 0)
 11:0/0/physics_layer_2/angular_velocity = 0.0
+11:0/0/physics_layer_3/linear_velocity = Vector2(0, 0)
+11:0/0/physics_layer_3/angular_velocity = 0.0
 11:0/0/metadata/_better_terrain = {
 0: [8],
 4: [8],
@@ -996,6 +1156,8 @@ texture = ExtResource("1_afuvj")
 11:1/0/physics_layer_1/angular_velocity = 0.0
 11:1/0/physics_layer_2/linear_velocity = Vector2(0, 0)
 11:1/0/physics_layer_2/angular_velocity = 0.0
+11:1/0/physics_layer_3/linear_velocity = Vector2(0, 0)
+11:1/0/physics_layer_3/angular_velocity = 0.0
 11:1/0/metadata/_better_terrain = {
 0: [8],
 4: [8],
@@ -1010,6 +1172,8 @@ texture = ExtResource("1_afuvj")
 13:1/0/physics_layer_1/angular_velocity = 0.0
 13:1/0/physics_layer_2/linear_velocity = Vector2(0, 0)
 13:1/0/physics_layer_2/angular_velocity = 0.0
+13:1/0/physics_layer_3/linear_velocity = Vector2(0, 0)
+13:1/0/physics_layer_3/angular_velocity = 0.0
 14:1/0 = 0
 14:1/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 14:1/0/physics_layer_0/angular_velocity = 0.0
@@ -1017,6 +1181,8 @@ texture = ExtResource("1_afuvj")
 14:1/0/physics_layer_1/angular_velocity = 0.0
 14:1/0/physics_layer_2/linear_velocity = Vector2(0, 0)
 14:1/0/physics_layer_2/angular_velocity = 0.0
+14:1/0/physics_layer_3/linear_velocity = Vector2(0, 0)
+14:1/0/physics_layer_3/angular_velocity = 0.0
 14:0/0 = 0
 14:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 14:0/0/physics_layer_0/angular_velocity = 0.0
@@ -1024,6 +1190,8 @@ texture = ExtResource("1_afuvj")
 14:0/0/physics_layer_1/angular_velocity = 0.0
 14:0/0/physics_layer_2/linear_velocity = Vector2(0, 0)
 14:0/0/physics_layer_2/angular_velocity = 0.0
+14:0/0/physics_layer_3/linear_velocity = Vector2(0, 0)
+14:0/0/physics_layer_3/angular_velocity = 0.0
 13:0/0 = 0
 13:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 13:0/0/physics_layer_0/angular_velocity = 0.0
@@ -1031,6 +1199,8 @@ texture = ExtResource("1_afuvj")
 13:0/0/physics_layer_1/angular_velocity = 0.0
 13:0/0/physics_layer_2/linear_velocity = Vector2(0, 0)
 13:0/0/physics_layer_2/angular_velocity = 0.0
+13:0/0/physics_layer_3/linear_velocity = Vector2(0, 0)
+13:0/0/physics_layer_3/angular_velocity = 0.0
 13:0/0/metadata/_better_terrain = {
 "type": -2
 }
@@ -1041,6 +1211,8 @@ texture = ExtResource("1_afuvj")
 13:3/0/physics_layer_1/angular_velocity = 0.0
 13:3/0/physics_layer_2/linear_velocity = Vector2(0, 0)
 13:3/0/physics_layer_2/angular_velocity = 0.0
+13:3/0/physics_layer_3/linear_velocity = Vector2(0, 0)
+13:3/0/physics_layer_3/angular_velocity = 0.0
 13:3/0/metadata/_better_terrain = {
 8: [12],
 "type": 12
@@ -1052,6 +1224,8 @@ texture = ExtResource("1_afuvj")
 12:3/0/physics_layer_1/angular_velocity = 0.0
 12:3/0/physics_layer_2/linear_velocity = Vector2(0, 0)
 12:3/0/physics_layer_2/angular_velocity = 0.0
+12:3/0/physics_layer_3/linear_velocity = Vector2(0, 0)
+12:3/0/physics_layer_3/angular_velocity = 0.0
 12:3/0/metadata/_better_terrain = {
 0: [12],
 8: [12],
@@ -1064,6 +1238,8 @@ texture = ExtResource("1_afuvj")
 11:3/0/physics_layer_1/angular_velocity = 0.0
 11:3/0/physics_layer_2/linear_velocity = Vector2(0, 0)
 11:3/0/physics_layer_2/angular_velocity = 0.0
+11:3/0/physics_layer_3/linear_velocity = Vector2(0, 0)
+11:3/0/physics_layer_3/angular_velocity = 0.0
 11:3/0/metadata/_better_terrain = {
 0: [12],
 "type": 12
@@ -1075,6 +1251,8 @@ texture = ExtResource("1_afuvj")
 10:3/0/physics_layer_1/angular_velocity = 0.0
 10:3/0/physics_layer_2/linear_velocity = Vector2(0, 0)
 10:3/0/physics_layer_2/angular_velocity = 0.0
+10:3/0/physics_layer_3/linear_velocity = Vector2(0, 0)
+10:3/0/physics_layer_3/angular_velocity = 0.0
 10:3/0/metadata/_better_terrain = {
 4: [12],
 "type": 12
@@ -1086,6 +1264,8 @@ texture = ExtResource("1_afuvj")
 10:4/0/physics_layer_1/angular_velocity = 0.0
 10:4/0/physics_layer_2/linear_velocity = Vector2(0, 0)
 10:4/0/physics_layer_2/angular_velocity = 0.0
+10:4/0/physics_layer_3/linear_velocity = Vector2(0, 0)
+10:4/0/physics_layer_3/angular_velocity = 0.0
 10:4/0/metadata/_better_terrain = {
 4: [12],
 12: [12],
@@ -1098,6 +1278,8 @@ texture = ExtResource("1_afuvj")
 10:5/0/physics_layer_1/angular_velocity = 0.0
 10:5/0/physics_layer_2/linear_velocity = Vector2(0, 0)
 10:5/0/physics_layer_2/angular_velocity = 0.0
+10:5/0/physics_layer_3/linear_velocity = Vector2(0, 0)
+10:5/0/physics_layer_3/angular_velocity = 0.0
 10:5/0/metadata/_better_terrain = {
 12: [12],
 "type": 12
@@ -1109,6 +1291,8 @@ texture = ExtResource("1_afuvj")
 11:5/0/physics_layer_1/angular_velocity = 0.0
 11:5/0/physics_layer_2/linear_velocity = Vector2(0, 0)
 11:5/0/physics_layer_2/angular_velocity = 0.0
+11:5/0/physics_layer_3/linear_velocity = Vector2(0, 0)
+11:5/0/physics_layer_3/angular_velocity = 0.0
 11:5/0/metadata/_better_terrain = {
 0: [12],
 12: [12],
@@ -1121,6 +1305,8 @@ texture = ExtResource("1_afuvj")
 12:5/0/physics_layer_1/angular_velocity = 0.0
 12:5/0/physics_layer_2/linear_velocity = Vector2(0, 0)
 12:5/0/physics_layer_2/angular_velocity = 0.0
+12:5/0/physics_layer_3/linear_velocity = Vector2(0, 0)
+12:5/0/physics_layer_3/angular_velocity = 0.0
 12:5/0/metadata/_better_terrain = {
 8: [12],
 12: [12],
@@ -1133,6 +1319,8 @@ texture = ExtResource("1_afuvj")
 12:4/0/physics_layer_1/angular_velocity = 0.0
 12:4/0/physics_layer_2/linear_velocity = Vector2(0, 0)
 12:4/0/physics_layer_2/angular_velocity = 0.0
+12:4/0/physics_layer_3/linear_velocity = Vector2(0, 0)
+12:4/0/physics_layer_3/angular_velocity = 0.0
 12:4/0/metadata/_better_terrain = {
 4: [12],
 8: [12],
@@ -1145,11 +1333,14 @@ texture = ExtResource("1_afuvj")
 11:4/0/physics_layer_1/angular_velocity = 0.0
 11:4/0/physics_layer_2/linear_velocity = Vector2(0, 0)
 11:4/0/physics_layer_2/angular_velocity = 0.0
+11:4/0/physics_layer_3/linear_velocity = Vector2(0, 0)
+11:4/0/physics_layer_3/angular_velocity = 0.0
 11:4/0/metadata/_better_terrain = {
 0: [12],
 4: [12],
 "type": 12
 }
+10:6/next_alternative_id = 2
 10:6/0 = 0
 10:6/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 10:6/0/physics_layer_0/angular_velocity = 0.0
@@ -1158,10 +1349,23 @@ texture = ExtResource("1_afuvj")
 10:6/0/physics_layer_1/polygon_0/points = PackedVector2Array(-8, 4, 8, 4, 8, 8, -8, 8)
 10:6/0/physics_layer_2/linear_velocity = Vector2(0, 0)
 10:6/0/physics_layer_2/angular_velocity = 0.0
+10:6/0/physics_layer_3/linear_velocity = Vector2(0, 0)
+10:6/0/physics_layer_3/angular_velocity = 0.0
 10:6/0/metadata/_better_terrain = {
-4: [7, 9],
+4: [7],
 "type": 9
 }
+10:6/1 = 1
+10:6/1/physics_layer_0/linear_velocity = Vector2(0, 0)
+10:6/1/physics_layer_0/angular_velocity = 0.0
+10:6/1/physics_layer_1/linear_velocity = Vector2(0, 0)
+10:6/1/physics_layer_1/angular_velocity = 0.0
+10:6/1/physics_layer_2/linear_velocity = Vector2(0, 0)
+10:6/1/physics_layer_2/angular_velocity = 0.0
+10:6/1/physics_layer_3/linear_velocity = Vector2(0, 0)
+10:6/1/physics_layer_3/angular_velocity = 0.0
+10:6/1/physics_layer_3/polygon_0/points = PackedVector2Array(-8, 3, 8, 3, 8, 8, -8, 8)
+11:6/next_alternative_id = 2
 11:6/0 = 0
 11:6/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 11:6/0/physics_layer_0/angular_velocity = 0.0
@@ -1170,10 +1374,22 @@ texture = ExtResource("1_afuvj")
 11:6/0/physics_layer_1/polygon_0/points = PackedVector2Array(8, -4, -8, -4, -8, -8, 8, -8)
 11:6/0/physics_layer_2/linear_velocity = Vector2(0, 0)
 11:6/0/physics_layer_2/angular_velocity = 0.0
+11:6/0/physics_layer_3/linear_velocity = Vector2(0, 0)
+11:6/0/physics_layer_3/angular_velocity = 0.0
 11:6/0/metadata/_better_terrain = {
 12: [7],
 "type": 9
 }
+11:6/1 = 1
+11:6/1/physics_layer_0/linear_velocity = Vector2(0, 0)
+11:6/1/physics_layer_0/angular_velocity = 0.0
+11:6/1/physics_layer_1/linear_velocity = Vector2(0, 0)
+11:6/1/physics_layer_1/angular_velocity = 0.0
+11:6/1/physics_layer_2/linear_velocity = Vector2(0, 0)
+11:6/1/physics_layer_2/angular_velocity = 0.0
+11:6/1/physics_layer_3/linear_velocity = Vector2(0, 0)
+11:6/1/physics_layer_3/angular_velocity = 0.0
+11:6/1/physics_layer_3/polygon_0/points = PackedVector2Array(8, -3, -8, -3, -8, -8, 8, -8)
 10:8/0 = 0
 10:8/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 10:8/0/physics_layer_0/angular_velocity = 0.0
@@ -1182,6 +1398,8 @@ texture = ExtResource("1_afuvj")
 10:8/0/physics_layer_1/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 10:8/0/physics_layer_2/linear_velocity = Vector2(0, 0)
 10:8/0/physics_layer_2/angular_velocity = 0.0
+10:8/0/physics_layer_3/linear_velocity = Vector2(0, 0)
+10:8/0/physics_layer_3/angular_velocity = 0.0
 15:0/0 = 0
 15:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 15:0/0/physics_layer_0/angular_velocity = 0.0
@@ -1190,6 +1408,8 @@ texture = ExtResource("1_afuvj")
 15:0/0/physics_layer_1/angular_velocity = 0.0
 15:0/0/physics_layer_2/linear_velocity = Vector2(0, 0)
 15:0/0/physics_layer_2/angular_velocity = 0.0
+15:0/0/physics_layer_3/linear_velocity = Vector2(0, 0)
+15:0/0/physics_layer_3/angular_velocity = 0.0
 15:0/0/metadata/_better_terrain = {
 0: [7],
 4: [7],
@@ -1203,6 +1423,8 @@ texture = ExtResource("1_afuvj")
 15:1/0/physics_layer_1/angular_velocity = 0.0
 15:1/0/physics_layer_2/linear_velocity = Vector2(0, 0)
 15:1/0/physics_layer_2/angular_velocity = 0.0
+15:1/0/physics_layer_3/linear_velocity = Vector2(0, 0)
+15:1/0/physics_layer_3/angular_velocity = 0.0
 15:1/0/metadata/_better_terrain = {
 0: [7],
 4: [7],
@@ -1217,6 +1439,8 @@ texture = ExtResource("1_afuvj")
 15:2/0/physics_layer_1/angular_velocity = 0.0
 15:2/0/physics_layer_2/linear_velocity = Vector2(0, 0)
 15:2/0/physics_layer_2/angular_velocity = 0.0
+15:2/0/physics_layer_3/linear_velocity = Vector2(0, 0)
+15:2/0/physics_layer_3/angular_velocity = 0.0
 15:2/0/metadata/_better_terrain = {
 0: [7],
 12: [7],
@@ -1230,6 +1454,8 @@ texture = ExtResource("1_afuvj")
 16:2/0/physics_layer_1/angular_velocity = 0.0
 16:2/0/physics_layer_2/linear_velocity = Vector2(0, 0)
 16:2/0/physics_layer_2/angular_velocity = 0.0
+16:2/0/physics_layer_3/linear_velocity = Vector2(0, 0)
+16:2/0/physics_layer_3/angular_velocity = 0.0
 16:2/0/metadata/_better_terrain = {
 0: [7],
 8: [7],
@@ -1244,6 +1470,8 @@ texture = ExtResource("1_afuvj")
 17:2/0/physics_layer_1/angular_velocity = 0.0
 17:2/0/physics_layer_2/linear_velocity = Vector2(0, 0)
 17:2/0/physics_layer_2/angular_velocity = 0.0
+17:2/0/physics_layer_3/linear_velocity = Vector2(0, 0)
+17:2/0/physics_layer_3/angular_velocity = 0.0
 17:2/0/metadata/_better_terrain = {
 8: [7],
 12: [7],
@@ -1257,6 +1485,8 @@ texture = ExtResource("1_afuvj")
 17:1/0/physics_layer_1/angular_velocity = 0.0
 17:1/0/physics_layer_2/linear_velocity = Vector2(0, 0)
 17:1/0/physics_layer_2/angular_velocity = 0.0
+17:1/0/physics_layer_3/linear_velocity = Vector2(0, 0)
+17:1/0/physics_layer_3/angular_velocity = 0.0
 17:1/0/metadata/_better_terrain = {
 4: [7],
 8: [7],
@@ -1271,6 +1501,8 @@ texture = ExtResource("1_afuvj")
 17:0/0/physics_layer_1/angular_velocity = 0.0
 17:0/0/physics_layer_2/linear_velocity = Vector2(0, 0)
 17:0/0/physics_layer_2/angular_velocity = 0.0
+17:0/0/physics_layer_3/linear_velocity = Vector2(0, 0)
+17:0/0/physics_layer_3/angular_velocity = 0.0
 17:0/0/metadata/_better_terrain = {
 4: [7],
 8: [7],
@@ -1284,6 +1516,8 @@ texture = ExtResource("1_afuvj")
 16:0/0/physics_layer_1/angular_velocity = 0.0
 16:0/0/physics_layer_2/linear_velocity = Vector2(0, 0)
 16:0/0/physics_layer_2/angular_velocity = 0.0
+16:0/0/physics_layer_3/linear_velocity = Vector2(0, 0)
+16:0/0/physics_layer_3/angular_velocity = 0.0
 16:0/0/metadata/_better_terrain = {
 0: [7],
 4: [7],
@@ -1298,6 +1532,8 @@ texture = ExtResource("1_afuvj")
 16:1/0/physics_layer_1/angular_velocity = 0.0
 16:1/0/physics_layer_2/linear_velocity = Vector2(0, 0)
 16:1/0/physics_layer_2/angular_velocity = 0.0
+16:1/0/physics_layer_3/linear_velocity = Vector2(0, 0)
+16:1/0/physics_layer_3/angular_velocity = 0.0
 16:1/0/metadata/_better_terrain = {
 0: [7],
 4: [7],
@@ -1312,6 +1548,8 @@ texture = ExtResource("1_afuvj")
 15:4/0/physics_layer_1/angular_velocity = 0.0
 15:4/0/physics_layer_2/linear_velocity = Vector2(0, 0)
 15:4/0/physics_layer_2/angular_velocity = 0.0
+15:4/0/physics_layer_3/linear_velocity = Vector2(0, 0)
+15:4/0/physics_layer_3/angular_velocity = 0.0
 15:4/0/metadata/_better_terrain = {
 0: [7],
 4: [7],
@@ -1324,6 +1562,8 @@ texture = ExtResource("1_afuvj")
 15:5/0/physics_layer_1/angular_velocity = 0.0
 15:5/0/physics_layer_2/linear_velocity = Vector2(0, 0)
 15:5/0/physics_layer_2/angular_velocity = 0.0
+15:5/0/physics_layer_3/linear_velocity = Vector2(0, 0)
+15:5/0/physics_layer_3/angular_velocity = 0.0
 15:5/0/metadata/_better_terrain = {
 0: [7],
 4: [7],
@@ -1337,6 +1577,8 @@ texture = ExtResource("1_afuvj")
 15:6/0/physics_layer_1/angular_velocity = 0.0
 15:6/0/physics_layer_2/linear_velocity = Vector2(0, 0)
 15:6/0/physics_layer_2/angular_velocity = 0.0
+15:6/0/physics_layer_3/linear_velocity = Vector2(0, 0)
+15:6/0/physics_layer_3/angular_velocity = 0.0
 15:6/0/metadata/_better_terrain = {
 0: [7],
 12: [7],
@@ -1349,6 +1591,8 @@ texture = ExtResource("1_afuvj")
 16:6/0/physics_layer_1/angular_velocity = 0.0
 16:6/0/physics_layer_2/linear_velocity = Vector2(0, 0)
 16:6/0/physics_layer_2/angular_velocity = 0.0
+16:6/0/physics_layer_3/linear_velocity = Vector2(0, 0)
+16:6/0/physics_layer_3/angular_velocity = 0.0
 16:6/0/metadata/_better_terrain = {
 0: [7],
 8: [7],
@@ -1362,6 +1606,8 @@ texture = ExtResource("1_afuvj")
 17:6/0/physics_layer_1/angular_velocity = 0.0
 17:6/0/physics_layer_2/linear_velocity = Vector2(0, 0)
 17:6/0/physics_layer_2/angular_velocity = 0.0
+17:6/0/physics_layer_3/linear_velocity = Vector2(0, 0)
+17:6/0/physics_layer_3/angular_velocity = 0.0
 17:6/0/metadata/_better_terrain = {
 8: [7],
 12: [7],
@@ -1374,6 +1620,8 @@ texture = ExtResource("1_afuvj")
 17:5/0/physics_layer_1/angular_velocity = 0.0
 17:5/0/physics_layer_2/linear_velocity = Vector2(0, 0)
 17:5/0/physics_layer_2/angular_velocity = 0.0
+17:5/0/physics_layer_3/linear_velocity = Vector2(0, 0)
+17:5/0/physics_layer_3/angular_velocity = 0.0
 17:5/0/metadata/_better_terrain = {
 4: [7],
 8: [7],
@@ -1387,6 +1635,8 @@ texture = ExtResource("1_afuvj")
 17:4/0/physics_layer_1/angular_velocity = 0.0
 17:4/0/physics_layer_2/linear_velocity = Vector2(0, 0)
 17:4/0/physics_layer_2/angular_velocity = 0.0
+17:4/0/physics_layer_3/linear_velocity = Vector2(0, 0)
+17:4/0/physics_layer_3/angular_velocity = 0.0
 17:4/0/metadata/_better_terrain = {
 4: [7],
 8: [7],
@@ -1399,6 +1649,8 @@ texture = ExtResource("1_afuvj")
 16:4/0/physics_layer_1/angular_velocity = 0.0
 16:4/0/physics_layer_2/linear_velocity = Vector2(0, 0)
 16:4/0/physics_layer_2/angular_velocity = 0.0
+16:4/0/physics_layer_3/linear_velocity = Vector2(0, 0)
+16:4/0/physics_layer_3/angular_velocity = 0.0
 16:4/0/metadata/_better_terrain = {
 0: [7],
 4: [7],
@@ -1412,6 +1664,8 @@ texture = ExtResource("1_afuvj")
 16:5/0/physics_layer_1/angular_velocity = 0.0
 16:5/0/physics_layer_2/linear_velocity = Vector2(0, 0)
 16:5/0/physics_layer_2/angular_velocity = 0.0
+16:5/0/physics_layer_3/linear_velocity = Vector2(0, 0)
+16:5/0/physics_layer_3/angular_velocity = 0.0
 16:5/0/metadata/_better_terrain = {
 0: [7],
 4: [7],
@@ -1419,6 +1673,7 @@ texture = ExtResource("1_afuvj")
 12: [7],
 "type": 11
 }
+10:7/next_alternative_id = 2
 10:7/0 = 0
 10:7/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 10:7/0/physics_layer_0/angular_velocity = 0.0
@@ -1427,10 +1682,23 @@ texture = ExtResource("1_afuvj")
 10:7/0/physics_layer_2/linear_velocity = Vector2(0, 0)
 10:7/0/physics_layer_2/angular_velocity = 0.0
 10:7/0/physics_layer_2/polygon_0/points = PackedVector2Array(-8, -8, -3, -8, -3, 8, -8, 8)
+10:7/0/physics_layer_3/linear_velocity = Vector2(0, 0)
+10:7/0/physics_layer_3/angular_velocity = 0.0
 10:7/0/metadata/_better_terrain = {
 8: [7],
 "type": 9
 }
+10:7/1 = 1
+10:7/1/physics_layer_0/linear_velocity = Vector2(0, 0)
+10:7/1/physics_layer_0/angular_velocity = 0.0
+10:7/1/physics_layer_1/linear_velocity = Vector2(0, 0)
+10:7/1/physics_layer_1/angular_velocity = 0.0
+10:7/1/physics_layer_2/linear_velocity = Vector2(0, 0)
+10:7/1/physics_layer_2/angular_velocity = 0.0
+10:7/1/physics_layer_3/linear_velocity = Vector2(0, 0)
+10:7/1/physics_layer_3/angular_velocity = 0.0
+10:7/1/physics_layer_3/polygon_0/points = PackedVector2Array(-3, -8, -3, 8, -8, 8, -8, -8)
+11:7/next_alternative_id = 2
 11:7/0 = 0
 11:7/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 11:7/0/physics_layer_0/angular_velocity = 0.0
@@ -1439,15 +1707,28 @@ texture = ExtResource("1_afuvj")
 11:7/0/physics_layer_2/linear_velocity = Vector2(0, 0)
 11:7/0/physics_layer_2/angular_velocity = 0.0
 11:7/0/physics_layer_2/polygon_0/points = PackedVector2Array(8, 8, 3, 8, 3, -8, 8, -8)
+11:7/0/physics_layer_3/linear_velocity = Vector2(0, 0)
+11:7/0/physics_layer_3/angular_velocity = 0.0
 11:7/0/metadata/_better_terrain = {
 0: [7],
 "type": 9
 }
+11:7/1 = 1
+11:7/1/physics_layer_0/linear_velocity = Vector2(0, 0)
+11:7/1/physics_layer_0/angular_velocity = 0.0
+11:7/1/physics_layer_1/linear_velocity = Vector2(0, 0)
+11:7/1/physics_layer_1/angular_velocity = 0.0
+11:7/1/physics_layer_2/linear_velocity = Vector2(0, 0)
+11:7/1/physics_layer_2/angular_velocity = 0.0
+11:7/1/physics_layer_3/linear_velocity = Vector2(0, 0)
+11:7/1/physics_layer_3/angular_velocity = 0.0
+11:7/1/physics_layer_3/polygon_0/points = PackedVector2Array(3, 8, 3, -8, 8, -8, 8, 8)
 
 [resource]
 physics_layer_0/collision_layer = 1
 physics_layer_1/collision_layer = 2
 physics_layer_2/collision_layer = 32
+physics_layer_3/collision_layer = 34
 sources/0 = SubResource("TileSetAtlasSource_g4ujr")
 metadata/_better_terrain = {
 "decoration": ["Decoration", Color(0.411765, 0.411765, 0.411765, 1), 3, [], {
@@ -1469,7 +1750,7 @@ metadata/_better_terrain = {
 "path": ""
 }], ["SOLID", Color(0.823529, 0.117647, 0.117647, 1), 2, [], {
 "path": ""
-}], ["Inner", Color(0.414995, 0.158128, 0.680026, 1), 0, [9], {
+}], ["Inner", Color(0.414995, 0.158128, 0.680026, 1), 0, [], {
 "path": ""
 }], ["Spike", Color(0.803922, 0.843137, 0.137255, 1), 0, [], {
 "path": ""
