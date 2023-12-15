@@ -10,4 +10,4 @@ func _ready():
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	if $NoteReactor.is_reacted(): modulate = Notes.colors[id]
-	else: modulate = Color(1,1,1,1)
+	else: modulate = 0.7 * Color(1,1,1,1) + 0.3 * Notes.colors[id]

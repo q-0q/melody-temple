@@ -15,6 +15,6 @@ func _ready():
 func _process(delta):
 	var weight : float = inverse_lerp(bottom, top, Util.player_pos.y)
 	weight = clampf(-1, 0, weight)
-	color = lerp(base, c, weight)
+	color = lerp(base, c, 1)
 	if Input.is_key_pressed(KEY_J):
 		print(weight)

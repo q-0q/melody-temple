@@ -6,6 +6,7 @@ class_name Coin
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	Stats.add_total_coin()
 	$AnimationPlayer.play("idle")
 
 
@@ -18,6 +19,7 @@ func destroy():
 
 func _on_area_2d_body_entered(body):
 	if body.name != "Player": return
+	Stats.get_coin()
 	Sounds.get_node("Coin").play()
 	NoiseManager.do_shake(25,100,curve,2)
 	$AnimationPlayer.play("get")

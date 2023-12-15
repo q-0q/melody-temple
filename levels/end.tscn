@@ -1,0 +1,117 @@
+[gd_scene load_steps=9 format=3 uid="uid://cssf70ber085y"]
+
+[ext_resource type="Script" path="res://Scripts/end.gd" id="1_kwfj2"]
+[ext_resource type="Texture2D" uid="uid://qhgve3hecsvn" path="res://Assets/Tilemap/coin.png" id="2_5xwow"]
+[ext_resource type="Texture2D" uid="uid://b7f06dxheuku0" path="res://Assets/Tilemap/clouds2.png" id="2_ywsko"]
+[ext_resource type="Script" path="res://Scripts/menubackground.gd" id="3_leejx"]
+[ext_resource type="Texture2D" uid="uid://cxb0ydr3swro2" path="res://Assets/Tilemap/clock.png" id="4_oat61"]
+[ext_resource type="Environment" uid="uid://beb7ls66itbce" path="res://levels/env.tres" id="4_r605b"]
+[ext_resource type="Texture2D" uid="uid://cyp6qs5ejilmk" path="res://Assets/Tilemap/skull.png" id="6_puir6"]
+
+[sub_resource type="SystemFont" id="SystemFont_0qlvp"]
+
+[node name="menu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_kwfj2")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 0
+offset_left = 10.0
+offset_top = 10.0
+offset_right = 304.0
+offset_bottom = 100.0
+theme_override_constants/separation = 7
+
+[node name="RichTextLabel" type="RichTextLabel" parent="VBoxContainer"]
+texture_filter = 1
+layout_mode = 2
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 2
+theme_override_fonts/normal_font = SubResource("SystemFont_0qlvp")
+theme_override_font_sizes/normal_font_size = 40
+text = "fin"
+fit_content = true
+autowrap_mode = 0
+
+[node name="Sprite2D" type="Sprite2D" parent="VBoxContainer"]
+position = Vector2(12, 109)
+texture = ExtResource("2_5xwow")
+hframes = 8
+
+[node name="Sprite2D2" type="Sprite2D" parent="VBoxContainer"]
+position = Vector2(11, 143)
+texture = ExtResource("6_puir6")
+
+[node name="Sprite2D3" type="Sprite2D" parent="VBoxContainer"]
+position = Vector2(11, 76)
+texture = ExtResource("4_oat61")
+
+[node name="clock" type="RichTextLabel" parent="VBoxContainer"]
+texture_filter = 1
+layout_mode = 2
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 2
+theme_override_fonts/normal_font = SubResource("SystemFont_0qlvp")
+theme_override_font_sizes/normal_font_size = 19
+text = "     13:32.39"
+fit_content = true
+autowrap_mode = 0
+
+[node name="coins" type="RichTextLabel" parent="VBoxContainer"]
+texture_filter = 1
+layout_mode = 2
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 2
+theme_override_fonts/normal_font = SubResource("SystemFont_0qlvp")
+theme_override_font_sizes/normal_font_size = 19
+text = "      7/9"
+fit_content = true
+autowrap_mode = 0
+
+[node name="deaths" type="RichTextLabel" parent="VBoxContainer"]
+texture_filter = 1
+layout_mode = 2
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 2
+theme_override_fonts/normal_font = SubResource("SystemFont_0qlvp")
+theme_override_font_sizes/normal_font_size = 19
+text = "      43"
+fit_content = true
+autowrap_mode = 0
+
+[node name="thanks" type="RichTextLabel" parent="VBoxContainer"]
+texture_filter = 1
+layout_mode = 2
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 2
+theme_override_fonts/normal_font = SubResource("SystemFont_0qlvp")
+theme_override_font_sizes/normal_font_size = 19
+text = "
+
+Thanks for playing :)"
+fit_content = true
+autowrap_mode = 0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer"]
+layout_mode = 2
+
+[node name="Button" type="Button" parent="VBoxContainer/HBoxContainer"]
+layout_mode = 2
+text = "Back to menu"
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+modulate = Color(1, 0.572549, 0.411765, 1)
+z_index = -1
+position = Vector2(122, 288)
+texture = ExtResource("2_ywsko")
+script = ExtResource("3_leejx")
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = ExtResource("4_r605b")
+
+[connection signal="pressed" from="VBoxContainer/HBoxContainer/Button" to="." method="_on_button_pressed"]

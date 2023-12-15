@@ -23,6 +23,8 @@ var speed_cache = CircularQueue.new(37)
 @export var loop : bool = false
 @export var deg_offset : float = 0.0
 
+@export var hide_line : bool = false
+
 
 
 # Called when the node enters the scene tree for the first time.
@@ -42,6 +44,7 @@ func _ready():
 	$TileMap.collision_animatable = true
 	
 func _draw():
+	if hide_line: return
 	var color : Color
 	if auto: color = Color.WHITE
 	else: color = Notes.colors[note_id]

@@ -1,9 +1,12 @@
-[gd_scene load_steps=6 format=3 uid="uid://cpicccurfcqbp"]
+[gd_scene load_steps=9 format=3 uid="uid://cpicccurfcqbp"]
 
 [ext_resource type="Script" path="res://Scripts/menu.gd" id="1_1b6aq"]
 [ext_resource type="Texture2D" uid="uid://b7f06dxheuku0" path="res://Assets/Tilemap/clouds2.png" id="2_4qf4k"]
+[ext_resource type="Script" path="res://Scripts/VolumeSlider.gd" id="2_dqxk7"]
 [ext_resource type="Script" path="res://Scripts/menubackground.gd" id="2_j3u2n"]
+[ext_resource type="Script" path="res://Scripts/FadeinMusic.gd" id="2_nwjhh"]
 [ext_resource type="Environment" uid="uid://beb7ls66itbce" path="res://levels/env.tres" id="4_6ml40"]
+[ext_resource type="Texture2D" uid="uid://clhajcrwxjgy2" path="res://Assets/Tilemap/logo.png" id="7_twp7j"]
 
 [sub_resource type="SystemFont" id="SystemFont_0qlvp"]
 
@@ -15,6 +18,18 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_1b6aq")
+
+[node name="FadeInMusic" type="Node2D" parent="."]
+position = Vector2(10, 267)
+script = ExtResource("2_nwjhh")
+music_layer = "Music2"
+to = -80.0
+
+[node name="FadeInMusic2" type="Node2D" parent="."]
+position = Vector2(10, 267)
+script = ExtResource("2_nwjhh")
+music_layer = "Music3"
+to = -80.0
 
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
 layout_mode = 0
@@ -30,7 +45,9 @@ theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_constants/outline_size = 2
 theme_override_fonts/normal_font = SubResource("SystemFont_0qlvp")
 theme_override_font_sizes/normal_font_size = 40
-text = "Melody Temple"
+text = "
+
+"
 fit_content = true
 autowrap_mode = 0
 
@@ -41,18 +58,44 @@ layout_mode = 2
 layout_mode = 2
 text = "Start"
 
-[node name="Button2" type="Button" parent="VBoxContainer/HBoxContainer"]
+[node name="RichTextLabel2" type="RichTextLabel" parent="VBoxContainer"]
+texture_filter = 1
 layout_mode = 2
-text = "Options"
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 2
+theme_override_fonts/normal_font = SubResource("SystemFont_0qlvp")
+theme_override_font_sizes/normal_font_size = 19
+text = "
+
+
+Volume
+"
+fit_content = true
+autowrap_mode = 0
+
+[node name="HSlider" type="HSlider" parent="."]
+layout_mode = 2
+offset_left = 10.0
+offset_top = 267.0
+offset_right = 135.0
+offset_bottom = 283.0
+max_value = 1.0
+step = 0.1
+script = ExtResource("2_dqxk7")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 z_index = -1
-position = Vector2(122, 288)
+position = Vector2(149, 316)
 texture = ExtResource("2_4qf4k")
 script = ExtResource("2_j3u2n")
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = ExtResource("4_6ml40")
 
+[node name="Sprite2D2" type="Sprite2D" parent="."]
+position = Vector2(104, 61)
+scale = Vector2(2, 2)
+texture = ExtResource("7_twp7j")
+
 [connection signal="pressed" from="VBoxContainer/HBoxContainer/Button" to="." method="start_pressed"]
-[connection signal="pressed" from="VBoxContainer/HBoxContainer/Button2" to="." method="options_pressed"]
+[connection signal="value_changed" from="HSlider" to="HSlider" method="_on_value_changed"]

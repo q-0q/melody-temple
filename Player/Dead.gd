@@ -13,6 +13,7 @@ func _ready():
 	rect.position.y = -rect.size.y
 
 func on_enter():
+	Stats.add_death()
 	$AudioStreamPlayer.play()
 	Player.velocity = Vector2.ZERO
 	cam = Player.get_node("Camera2D")

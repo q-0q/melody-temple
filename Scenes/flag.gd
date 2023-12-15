@@ -14,7 +14,7 @@ func _process(delta):
 func _on_area_2d_body_entered(body):
 	if body.name != "Player": return
 	$AnimationPlayer.play("hit")
-	body.set_respawn(position + Vector2(0, -16))
+	body.set_respawn(position + Vector2(0, -8))
 	if !is_on:
 		$Sound.play()
 		$GPUParticles2D.emitting = true

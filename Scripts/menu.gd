@@ -12,6 +12,7 @@ func _process(delta):
 
 
 func start_pressed():
+	Stats.reset()
 	SceneManager.load_level("res://levels/lvl1.tscn")
 
 

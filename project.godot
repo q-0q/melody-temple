@@ -10,12 +10,16 @@ config_version=5
 
 [application]
 
-config/name="BigMode Game jam"
+config/name="Melody Temple"
 run/main_scene="res://levels/lvl4.tscn"
 config/features=PackedStringArray("4.1", "Forward Plus")
 run/max_fps=120
-boot_splash/show_image=false
+boot_splash/bg_color=Color(0, 0, 0, 1)
+boot_splash/image="res://Assets/Tilemap/splash.png"
+boot_splash/use_filter=false
 config/icon="res://icon.svg"
+config/windows_native_icon="res://Assets/Tilemap/icon.ico"
+boot_splash/minimum_display_time=2500
 
 [autoload]
 
@@ -25,11 +29,13 @@ Sounds="*res://Autoload/Sounds.tscn"
 SceneManager="*res://Autoload/SceneManager.tscn"
 NoiseManager="*res://Autoload/noise_manager.gd"
 Util="*res://Autoload/util.gd"
+Stats="*res://stats.gd"
 
 [display]
 
 window/size/viewport_width=250
 window/size/viewport_height=150
+window/size/mode=3
 window/stretch/mode="viewport"
 window/stretch/scale=0.5
 
